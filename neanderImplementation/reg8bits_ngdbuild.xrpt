@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Tue May 03 10:00:51 2016">
+  <application stringID="NgdBuild" timeStamp="Tue May 03 12:59:53 2016">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -39,13 +39,13 @@
         <item stringID="User_EnvOsname" value="Microsoft Windows 7 , 64-bit"/>
         <item stringID="User_EnvOsrelease" value="Service Pack 1  (build 7601)"/>
       </item>
-      <item stringID="User_EnvHost" value="s-67-101-18"/>
+      <item stringID="User_EnvHost" value="S-72-204-10"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="AMD A8-5500B APU with Radeon(tm) HD Graphics   "/>
-          <item stringID="speed" value="3194 MHz"/>
+          <item stringID="arch" value="AMD Phenom(tm) II X2 B55 Processor"/>
+          <item stringID="speed" value="2992 MHz"/>
         </row>
       </table>
     </section>
@@ -54,6 +54,7 @@
         <item DEFAULT="None" label="-intstyle" stringID="NGDBUILD_intstyle" value="ise"/>
         <item DEFAULT="None" label="-dd" stringID="NGDBUILD_output_dir" value="_ngo"/>
         <item DEFAULT="None" label="-p" stringID="NGDBUILD_partname" value="xc3s100e-cp132-4"/>
+        <item DEFAULT="None" label="-sd" stringID="NGDBUILD_search_path" value="ipcore_dir"/>
       </section>
     </task>
     <task stringID="NGDBUILD_REPORT">

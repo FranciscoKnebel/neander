@@ -26,26 +26,19 @@ entity PC_register is
 	);
 end PC_register;
 
-architecture Behavioral of PC_register is 
+architecture Behavioral of PC_register is
+	signal data: std_logic_vector(7 downto 0);
 begin
 
 	process(clk, rst)
-		variable data : std_logic_vector(7 downto 0);
-      variable incPC_cont : integer;
 	begin
-		if (rst = '1') then	
-			data := "00000001";
-         incPC_cont := 0;
-		elsif (clk = '1' and clk'event) then
+		if (rst = '1') then
+			data := "00000000";
+		elsif(clk = '1' AND clk'event) then
 			if (cargaPC = '1') then
 				data := data_in;
 			elsif (incrementaPC = '1') then
-				 incPC_cont := incPC_cont + 1;
-				 
-				 if (incPC_cont = 2) then
-						data := std_logic_vector(unsigned(data) + 1);
-						incPC_cont := 0;
-				 end if;
+				data := std_logic_vector(unsigned(data) + 1);
 			end if;
 		end if;
 	end process;

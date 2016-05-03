@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-05-03T10:13:02</DateModified>
+  <DateModified>2016-05-03T12:35:33</DateModified>
   <ModuleName>reg8bits</ModuleName>
   <SummaryTimeStamp>2016-05-03T10:01:19</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/aluno/Desktop/Git/neander/neanderImplementation/iseconfig/reg8bits.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/aluno/Desktop/Git/neander/neanderImplementation</ImplementationReportsDirectory>
+  <SavedFilePath>X:/Windows Config/Desktop/neander/neanderImplementation/iseconfig/reg8bits.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>X:/Windows Config/Desktop/neander/neanderImplementation\</ImplementationReportsDirectory>
   <DateInitialized>2016-05-03T08:44:34</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

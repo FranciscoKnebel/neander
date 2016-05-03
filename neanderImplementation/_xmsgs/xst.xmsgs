@@ -5,5 +5,11 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/reg8bits</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/aluno/Desktop/Git/neander/neanderImplementation/reg8.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">//homes/fpknebel/Windows Config/Desktop/neander/neanderImplementation/reg8.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/reg8bits/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/Users/aluno/Desktop/Git/neander/neanderImplementation/reg8.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">//homes/fpknebel/Windows Config/Desktop/neander/neanderImplementation/reg8.vhd</arg>&quot;.
+</msg>
+
 </messages>
 
