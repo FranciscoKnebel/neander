@@ -18,9 +18,9 @@ entity PC_register is
 		clk        : in std_logic;
 		rst        : in std_logic;
 		
-		cargaPC    : in std_logic;
-		incrementPC: in std_logic;
-		data_in    : in std_logic_vector(7 downto 0);
+		cargaPC     : in std_logic;
+		incrementaPC: in std_logic;
+		data_in     : in std_logic_vector(7 downto 0);
 		
 		data_out   : out std_logic_vector(7 downto 0)
 	);
@@ -30,7 +30,7 @@ architecture Behavioral of PC_register is
 begin
 
 	process(clk, rst)
-		variable data : std_logic_vector(7 downto 0);  -- variavel auxiliar
+		variable data : std_logic_vector(7 downto 0);
       variable incPC_cont : integer;
 	begin
 		if (rst = '1') then	
@@ -39,7 +39,7 @@ begin
 		elsif (clk = '1' and clk'event) then
 			if (cargaPC = '1') then
 				data := data_in;
-			elsif (incrementPC = '1') then
+			elsif (incrementaPC = '1') then
 				 incPC_cont := incPC_cont + 1;
 				 
 				 if (incPC_cont = 2) then

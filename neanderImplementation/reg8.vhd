@@ -27,15 +27,16 @@ end reg8bits;
 
 architecture Behavioral of reg8bits is
 	signal reg : std_logic_vector (7 downto 0);
+	constant reg_delay: TIME := 2 ns;
 begin
 	
 	process (clk, rst)
 	begin
 		if (rst = '1') then
-			data_out <= "00000000";
-		elsif (clk = '1' and clk_in'EVENT) then
+			reg <= "00000000";
+		elsif (clk = '1' and clk'EVENT) then
 			if (load = '1') then
-				data_out <= data_in;
+				reg <= data_in;
 			end if;
 		end if;
 	end process;
