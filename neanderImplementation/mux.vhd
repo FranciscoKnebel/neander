@@ -14,8 +14,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity mux is 
 	port (
-				PC   	: in  std_logic_vector(7 downto 0);
-				RDM  	: in  std_logic_vector(7 downto 0);
+				REG1   	: in  std_logic_vector(7 downto 0);
+				REG2  	: in  std_logic_vector(7 downto 0);
 				sel  	: in  std_logic;
 				
 				S		: out std_logic_vector(7 downto 0)
@@ -26,7 +26,7 @@ architecture Behavioral of mux is
 
 begin
 
-	S <= PC 	when sel = '0' else
-		  RDM when sel = '1';
+	S <= REG1 when sel = '0' else
+		  REG2 when sel = '1';
 	  
 end Behavioral;

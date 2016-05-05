@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Tue May 03 12:59:53 2016">
+  <application stringID="NgdBuild" timeStamp="Thu May 05 09:53:53 2016">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -39,13 +39,13 @@
         <item stringID="User_EnvOsname" value="Microsoft Windows 7 , 64-bit"/>
         <item stringID="User_EnvOsrelease" value="Service Pack 1  (build 7601)"/>
       </item>
-      <item stringID="User_EnvHost" value="S-72-204-10"/>
+      <item stringID="User_EnvHost" value="s-67-101-18"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="AMD Phenom(tm) II X2 B55 Processor"/>
-          <item stringID="speed" value="2992 MHz"/>
+          <item stringID="arch" value="AMD A8-5500B APU with Radeon(tm) HD Graphics   "/>
+          <item stringID="speed" value="3194 MHz"/>
         </row>
       </table>
     </section>
@@ -61,23 +61,12 @@
       <section stringID="NGDBUILD_DESIGN_SUMMARY">
         <item dataType="int" stringID="NGDBUILD_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="NGDBUILD_FILTERED_WARNINGS" value="0"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_WARNINGS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_WARNINGS" value="1"/>
         <item dataType="int" stringID="NGDBUILD_FILTERED_INFOS" value="0"/>
         <item dataType="int" stringID="NGDBUILD_NUM_INFOS" value="0"/>
       </section>
-      <section stringID="NGDBUILD_PRE_UNISIM_SUMMARY">
-        <item dataType="int" stringID="NGDBUILD_NUM_BUFGP" value="1"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_FDCE" value="8"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_IBUF" value="10"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="8"/>
-      </section>
-      <section stringID="NGDBUILD_POST_UNISIM_SUMMARY">
-        <item dataType="int" stringID="NGDBUILD_NUM_BUFG" value="1"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_FDCE" value="8"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_IBUF" value="10"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_IBUFG" value="1"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="8"/>
-      </section>
+      <section stringID="NGDBUILD_PRE_UNISIM_SUMMARY"/>
+      <section stringID="NGDBUILD_POST_UNISIM_SUMMARY"/>
       <section stringID="NGDBUILD_CORE_GENERATION_SUMMARY">
         <section stringID="NGDBUILD_CORE_INSTANCES"/>
       </section>

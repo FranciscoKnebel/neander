@@ -19,7 +19,8 @@ entity regNZ is
 		
 		clk	: in  STD_LOGIC;
 		rst	: in  STD_LOGIC;
-		load	: in  STD_LOGIC;
+		loadN	: in  STD_LOGIC;
+		loadZ	: in	STD_LOGIC;
 		
 		N_out : out STD_LOGIC;
 		Z_out : out STD_LOGIC
@@ -29,18 +30,19 @@ end regNZ;
 architecture Behavioral of regNZ is
 	signal data_N: STD_LOGIC;
 	signal data_Z: STD_LOGIC;
-	constant reg_delay: TIME := 2 ns;
 begin
 
 	process (clk, rst)
 	begin
 		if (rst = '1') then
-			data_N <= '0' AFTER reg_delay;
-			data_Z <= '0' AFTER reg_delay;
+			data_N <= '0';
+			data_Z <= '0';
 		elsif (clk = '1' and clk'EVENT) then
-			if (load = '1') then
-				data_N <= N_in AFTER reg_delay;
-				data_Z <= Z_in AFTER reg_delay;
+			if (loadN = '1') then
+				data_N <= N_in;
+			end if;
+			if (loadZ = '1') then
+				data_Z <= Z_in;
 			end if;
 		end if;
 	end process;
