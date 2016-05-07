@@ -86,5 +86,5 @@ begin
 
 			end if;
 		
-		end process program;
+		end process;
 end Behavioral;

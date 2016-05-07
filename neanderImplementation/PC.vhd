@@ -33,12 +33,12 @@ begin
 	process(clk, rst)
 	begin
 		if (rst = '1') then
-			data := "00000000";
+			data <= "00000000";
 		elsif(clk = '1' AND clk'event) then
 			if (cargaPC = '1') then
-				data := data_in;
+				data <= data_in;
 			elsif (incrementaPC = '1') then
-				data := std_logic_vector(unsigned(data) + 1);
+				data <= std_logic_vector(unsigned(data) + 1);
 			end if;
 		end if;
 	end process;

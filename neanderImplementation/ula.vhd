@@ -50,7 +50,8 @@ begin
 			when "100" => result <= e2;							-- LDA
 			when "101" => result <= "0" AND e1(7 downto 1); -- SHR
 			when "110" => result <= e1(6 downto 0) AND "0"; -- SHL
-			when "111" => result <= e1 * e2; 					-- MUL	
+			when "111" => result <= e1 * e2; 					-- MUL
+			when others => result <= e2;
 		end case;
 		
 		-- Zero

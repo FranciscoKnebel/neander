@@ -23,8 +23,8 @@ entity controlunit is
 			N		: in STD_LOGIC;
 			Z		: in STD_LOGIC;
 			--decoder
-			exec_NOP, exec_STA, exec_LDA, exec_ADD, exec_OR, exec_SHR, exec_SHL, exec_MUL,
-			exec_AND, exec_NOT, exec_JMP, exec_JN, exec_JZ, exec_HLT : in STD_LOGIC;
+			execNOP, execSTA, execLDA, execADD, execOR, execSHR, execSHL, execMUL,
+			execAND, execNOT, execJMP, execJN, execJZ, execHLT : in STD_LOGIC;
 						
 			
 			-- operation selector
@@ -53,8 +53,8 @@ end controlunit;
 architecture Behavioral of controlunit is
 	type state_machine is (
 		IDLE, BUSCA_INSTRUCAO, LER_INSTRUCAO, CARREGA_RI, 
-		EXEC_STA2, BUSCA_DADOS, BUSCA_ENDERECO, TRATA_JUMP, TRATA_JUMP_FAIL, 
-		READ_MEMORY, EXEC_STA, TRATA_HLT, EXEC_ULA, EXEC_ULA2);
+		EXEC_STA2, EXEC_STA1, BUSCA_DADOS, BUSCA_ENDERECO, TRATA_JUMP, TRATA_JUMP_FAIL, 
+		READ_MEMORY, TRATA_HLT, EXEC_ULA, EXEC_ULA2);
 		
 	signal current_state : state_machine;
 	signal next_state : state_machine;	
@@ -111,13 +111,13 @@ begin
 				PC_inc <= '0';
 				loadRI <= '1';
 				
-				if (exec_HLT = '1') then 		-- HLT
+				if (execHLT = '1') then 		-- HLT
 					next_state <= TRATA_HLT;
-				elsif (exec_NOP = '1') then 	-- NOP
+				elsif (execNOP = '1') then 	-- NOP
 					next_state <= BUSCA_INSTRUCAO;
-				elsif (exec_NOT = '1') then 	-- NOT
+				elsif (execNOT = '1') then 	-- NOT
 					next_state <= EXEC_ULA2;
-				elsif ((exec_JN = '1') and (N = '0')) or ((exec_JZ = '1') and (Z = '0')) then -- jump error
+				elsif ((execJN = '1') and (N = '0')) or ((execJZ = '1') and (Z = '0')) then -- jump error
 					next_state <= TRATA_JUMP_FAIL;
 				else
 					next_state <= BUSCA_DADOS;
@@ -131,23 +131,23 @@ begin
 				loadREM <= '0';
 				loadRDM <= '1';
 				PC_inc <= '1';
-				if (exec_add = '1') then 	-- ADD
+				if (execADD = '1') then 	-- ADD
 				next_state <= BUSCA_ENDERECO;
-				elsif (exec_or = '1') then 	-- OR
+				elsif (execOR = '1') then 	-- OR
 				next_state <= BUSCA_ENDERECO;
-				elsif (exec_and = '1') then -- AND
+				elsif (execAND = '1') then -- AND
 				next_state <= BUSCA_ENDERECO;
-				elsif (exec_lda = '1') then -- LDA
+				elsif (execLDA = '1') then -- LDA
 				next_state <= BUSCA_ENDERECO;
-				elsif (exec_shr = '1') then -- SHR
+				elsif (execSHR = '1') then -- SHR
 				next_state <= BUSCA_ENDERECO;
-				elsif (exec_shl = '1') then -- SHL
+				elsif (execSHL = '1') then -- SHL
 				next_state <= BUSCA_ENDERECO;
-				elsif (exec_mul = '1') then -- MUL
+				elsif (execMUL = '1') then -- MUL
 				next_state <= BUSCA_ENDERECO;
-				elsif (exec_sta = '1') then -- STA
+				elsif (execSTA = '1') then -- STA
 				next_state <= BUSCA_ENDERECO;
-				elsif ((exec_jmp = '1') or ((exec_jn = '1') and (N = '1')) or ((exec_jz = '1') and (z = '1'))) then -- real jump
+				elsif ((execJMP = '1') or ((execJN = '1') and (N = '1')) or ((execJZ = '1') and (Z = '1'))) then -- real jump
 					next_state <= TRATA_JUMP;
 				else
 					next_state <= IDLE;
@@ -158,42 +158,42 @@ begin
 				sel <= '1';		-- select 1 for REM<-RDM
 				loadREM <= '1';
 				
-				if (exec_add = '1') then 	 -- ADD
+				if (execADD = '1') then 	 -- ADD
 					next_state <= EXEC_ULA;
-				elsif (exec_or = '1') then  -- OR
+				elsif (execOR = '1') then  -- OR
 					next_state <= EXEC_ULA;
-				elsif (exec_and = '1') then -- AND
+				elsif (execAND = '1') then -- AND
 					next_state <= EXEC_ULA;
-				elsif (exec_lda = '1') then -- LDA
+				elsif (execLDA = '1') then -- LDA
 					next_state <= EXEC_ULA;
-				elsif (exec_shr = '1') then -- SHR
+				elsif (execSHR = '1') then -- SHR
 					next_state <= EXEC_ULA;
-				elsif (exec_shl = '1') then -- SHL
+				elsif (execSHL = '1') then -- SHL
 					next_state <= EXEC_ULA;
-				elsif (exec_mul = '1') then -- MUL
+				elsif (execMUL = '1') then -- MUL
 					next_state <= EXEC_ULA;
-				elsif (exec_sta = '1') then -- STA
-					next_state <= EXEC_STA;
+				elsif (execSTA = '1') then -- STA
+					next_state <= EXEC_STA1;
 				end if;
 			when EXEC_ULA =>		-- E6: RDM <- MEM(read)
 				loadREM <= '0';
 				loadRDM <= '1';
 				
-				if (exec_add = '1') then 	 -- ADD
+				if (execADD = '1') then 	 -- ADD
 					sel_ula <= "000";
-				elsif (exec_and = '1') then -- AND
+				elsif (execAND = '1') then -- AND
 					sel_ula <= "001";
-				elsif (exec_or = '1') then  -- OR
+				elsif (execOR = '1') then  -- OR
 					sel_ula <= "010";				
-				elsif (exec_not = '1') then -- NOT
+				elsif (execNOT = '1') then -- NOT
 					sel_ula <= "011";
-				elsif (exec_lda = '1') then -- LDA
+				elsif (execLDA = '1') then -- LDA
 					sel_ula <= "100";
-				elsif (exec_shr = '1') then -- SHR
+				elsif (execSHR = '1') then -- SHR
 					sel_ula <= "101";
-				elsif (exec_shl = '1') then -- SHL
+				elsif (execSHL = '1') then -- SHL
 					sel_ula <= "110";
-				elsif (exec_mul = '1') then -- MUL
+				elsif (execMUL = '1') then -- MUL
 					sel_ula <= "111";
 				end if;
 				next_state <= EXEC_ULA2;
@@ -204,7 +204,7 @@ begin
 				loadN <= '1';
 				loadZ <= '1';
 				next_state <= BUSCA_INSTRUCAO;
-			when EXEC_STA =>		-- E8: RDM <- AC
+			when EXEC_STA1 =>		-- E8: RDM <- AC
 				loadREM <= '0';
 				sel_mux_RDM <= '1'; -- select 1 for AC->RDM
 				loadRDM <= '1';

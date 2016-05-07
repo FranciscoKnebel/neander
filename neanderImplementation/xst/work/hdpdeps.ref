@@ -1,17 +1,65 @@
-V3 7
+V3 34
 FL "//homes/fpknebel/Windows Config/Desktop/neander/neanderImplementation/reg8.vhd" 2016/05/03.10:00:34 P.20131013
-EN work/reg8bits 1462291172 \
-      FL "//homes/fpknebel/Windows Config/Desktop/neander/neanderImplementation/reg8.vhd" \
+FL C:/Users/aluno/Desktop/Git/neander/neanderImplementation/neander.vhd 2016/05/05.09:53:36 P.20131013
+FL C:/Users/aluno/Desktop/Git/neander/neanderImplementation/reg8.vhd 2016/05/03.10:00:32 P.20131013
+FL C:/Users/franc/Documents/neander/neanderImplementation/controlunit.vhd 2016/05/06.23:59:43 P.20131013
+EN work/controlunit 1462591191 \
+      FL C:/Users/franc/Documents/neander/neanderImplementation/controlunit.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/reg8bits/Behavioral 1462291173 \
-      FL "//homes/fpknebel/Windows Config/Desktop/neander/neanderImplementation/reg8.vhd" \
-      EN work/reg8bits 1462291172
-FL C:/Users/aluno/Desktop/Git/neander/neanderImplementation/neander.vhd 2016/05/05.09:53:36 P.20131013
-EN work/neander 1462452821 \
-      FL C:/Users/aluno/Desktop/Git/neander/neanderImplementation/neander.vhd \
+AR work/controlunit/Behavioral 1462591192 \
+      FL C:/Users/franc/Documents/neander/neanderImplementation/controlunit.vhd \
+      EN work/controlunit 1462591191
+FL C:/Users/franc/Documents/neander/neanderImplementation/decoder.vhd 2016/05/06.23:33:41 P.20131013
+EN work/decoder 1462591185 \
+      FL C:/Users/franc/Documents/neander/neanderImplementation/decoder.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/neander/Behavioral 1462452822 \
-      FL C:/Users/aluno/Desktop/Git/neander/neanderImplementation/neander.vhd \
-      EN work/neander 1462452821
-FL C:/Users/aluno/Desktop/Git/neander/neanderImplementation/reg8.vhd 2016/05/03.10:00:32 P.20131013
+AR work/decoder/Behavioral 1462591186 \
+      FL C:/Users/franc/Documents/neander/neanderImplementation/decoder.vhd \
+      EN work/decoder 1462591185
+FL C:/Users/franc/Documents/neander/neanderImplementation/mux.vhd 2016/05/06.18:36:35 P.20131013
+EN work/mux 1462591187 \
+      FL C:/Users/franc/Documents/neander/neanderImplementation/mux.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/mux/Behavioral 1462591188 \
+      FL C:/Users/franc/Documents/neander/neanderImplementation/mux.vhd \
+      EN work/mux 1462591187
+FL C:/Users/franc/Documents/neander/neanderImplementation/neander.vhd 2016/05/06.23:49:10 P.20131013
+EN work/neander 1462589353 \
+      FL C:/Users/franc/Documents/neander/neanderImplementation/neander.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/neander/Behavioral 1462589354 \
+      FL C:/Users/franc/Documents/neander/neanderImplementation/neander.vhd \
+      EN work/neander 1462589353 CP reg8bits CP regNZ CP ula CP decoder CP mux \
+      CP PC_register CP controlunit
+FL C:/Users/franc/Documents/neander/neanderImplementation/PC.vhd 2016/05/06.23:34:02 P.20131013
+EN work/PC_register 1462591189 \
+      FL C:/Users/franc/Documents/neander/neanderImplementation/PC.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/PC_register/Behavioral 1462591190 \
+      FL C:/Users/franc/Documents/neander/neanderImplementation/PC.vhd \
+      EN work/PC_register 1462591189
+FL C:/Users/franc/Documents/neander/neanderImplementation/reg8.vhd 2016/05/06.18:36:35 P.20131013
+EN work/reg8bits 1462591179 \
+      FL C:/Users/franc/Documents/neander/neanderImplementation/reg8.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/reg8bits/Behavioral 1462591180 \
+      FL C:/Users/franc/Documents/neander/neanderImplementation/reg8.vhd \
+      EN work/reg8bits 1462591179
+FL C:/Users/franc/Documents/neander/neanderImplementation/regNZ.vhd 2016/05/06.18:36:35 P.20131013
+EN work/regNZ 1462591181 \
+      FL C:/Users/franc/Documents/neander/neanderImplementation/regNZ.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/regNZ/Behavioral 1462591182 \
+      FL C:/Users/franc/Documents/neander/neanderImplementation/regNZ.vhd \
+      EN work/regNZ 1462591181
+FL C:/Users/franc/Documents/neander/neanderImplementation/ula.vhd 2016/05/06.23:33:27 P.20131013
+EN work/ula 1462591183 \
+      FL C:/Users/franc/Documents/neander/neanderImplementation/ula.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_SIGNED 1381692178 \
+      PB ieee/std_logic_arith 1381692177
+AR work/ula/Behavioral 1462591184 \
+      FL C:/Users/franc/Documents/neander/neanderImplementation/ula.vhd \
+      EN work/ula 1462591183

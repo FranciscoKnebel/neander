@@ -5,10 +5,19 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="error" file="HDLParsers" num="1202" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/franc/Documents/neander/neanderImplementation/neander.vhd</arg>&quot; Line <arg fmt="%d" index="2">222</arg>. Redeclaration of symbol <arg fmt="%s" index="3">ula</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">rst</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="error" file="HDLParsers" num="1202" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/franc/Documents/neander/neanderImplementation/neander.vhd</arg>&quot; Line <arg fmt="%d" index="2">232</arg>. Redeclaration of symbol <arg fmt="%s" index="3">decoder</arg>.
+</msg>
+
+<msg type="error" file="HDLParsers" num="3313" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/franc/Documents/neander/neanderImplementation/neander.vhd</arg>&quot; Line <arg fmt="%d" index="2">241</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">mem_output</arg>&apos;.  Should it be: <arg fmt="%s" index="4">rem_output</arg>?
+</msg>
+
+<msg type="error" file="HDLParsers" num="1209" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/franc/Documents/neander/neanderImplementation/neander.vhd</arg>&quot; Line <arg fmt="%d" index="2">241</arg>. <arg fmt="%s" index="3">mem_output</arg>: Undefined symbol (last report in this block)
+</msg>
+
+<msg type="error" file="HDLParsers" num="851" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/franc/Documents/neander/neanderImplementation/neander.vhd</arg>&quot; Line <arg fmt="%d" index="2">239</arg>. Formal <arg fmt="%s" index="3">REG1</arg> of <arg fmt="%s" index="4">mux</arg> with no default value must be associated with an actual value.
 </msg>
 
 </messages>

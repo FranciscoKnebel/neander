@@ -1,4 +1,16 @@
-EN neander NULL C:/Users/aluno/Desktop/Git/neander/neanderImplementation/neander.vhd sub00/vhpl02 1462452821
-AR reg8bits behavioral "//homes/fpknebel/Windows Config/Desktop/neander/neanderImplementation/reg8.vhd" sub00/vhpl01 1462291173
-EN reg8bits NULL "//homes/fpknebel/Windows Config/Desktop/neander/neanderImplementation/reg8.vhd" sub00/vhpl00 1462291172
-AR neander behavioral C:/Users/aluno/Desktop/Git/neander/neanderImplementation/neander.vhd sub00/vhpl03 1462452822
+AR ula behavioral C:/Users/franc/Documents/neander/neanderImplementation/ula.vhd sub00/vhpl07 1462591184
+AR mux behavioral C:/Users/franc/Documents/neander/neanderImplementation/mux.vhd sub00/vhpl11 1462591188
+EN neander NULL C:/Users/franc/Documents/neander/neanderImplementation/neander.vhd sub00/vhpl02 1462591193
+AR controlunit behavioral C:/Users/franc/Documents/neander/neanderImplementation/controlunit.vhd sub00/vhpl15 1462591192
+EN regnz NULL C:/Users/franc/Documents/neander/neanderImplementation/regNZ.vhd sub00/vhpl04 1462591181
+AR pc_register behavioral C:/Users/franc/Documents/neander/neanderImplementation/PC.vhd sub00/vhpl13 1462591190
+AR regnz behavioral C:/Users/franc/Documents/neander/neanderImplementation/regNZ.vhd sub00/vhpl05 1462591182
+EN ula NULL C:/Users/franc/Documents/neander/neanderImplementation/ula.vhd sub00/vhpl06 1462591183
+EN controlunit NULL C:/Users/franc/Documents/neander/neanderImplementation/controlunit.vhd sub00/vhpl14 1462591191
+EN pc_register NULL C:/Users/franc/Documents/neander/neanderImplementation/PC.vhd sub00/vhpl12 1462591189
+EN mux NULL C:/Users/franc/Documents/neander/neanderImplementation/mux.vhd sub00/vhpl10 1462591187
+AR decoder behavioral C:/Users/franc/Documents/neander/neanderImplementation/decoder.vhd sub00/vhpl09 1462591186
+AR reg8bits behavioral C:/Users/franc/Documents/neander/neanderImplementation/reg8.vhd sub00/vhpl01 1462591180
+AR neander behavioral C:/Users/franc/Documents/neander/neanderImplementation/neander.vhd sub00/vhpl03 1462589354
+EN decoder NULL C:/Users/franc/Documents/neander/neanderImplementation/decoder.vhd sub00/vhpl08 1462591185
+EN reg8bits NULL C:/Users/franc/Documents/neander/neanderImplementation/reg8.vhd sub00/vhpl00 1462591179

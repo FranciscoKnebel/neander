@@ -32,10 +32,29 @@
 <msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Config\Desktop\neander\neanderImplementation\memoria.coe</arg>
 </msg>
 
-<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">An invalid core configuration has been detected during</arg>
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">IP initializer could not set IP core parameters on IP model</arg>
 </msg>
 
-<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Customization. Core parameters will be reset to their default values.</arg>
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Unable to find X:\Windows</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Config\Desktop\neander\neanderImplementation\memoria.coe</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Coregen is looking for X:\Windows</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Config\Desktop\neander\neanderImplementation\memoria.coe</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Failed to initialize IP model.</arg>
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" >Failed executing Tcl generator.
+</msg>
+
+<msg type="error" file="sim" num="0" delta="new" >Failed to generate &apos;blockMem&apos;.  Failed executing Tcl generator.
+
 </msg>
 
 </messages>

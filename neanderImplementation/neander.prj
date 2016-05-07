@@ -1,1 +1,8 @@
+vhdl work "ula.vhd"
+vhdl work "regNZ.vhd"
+vhdl work "reg8.vhd"
+vhdl work "PC.vhd"
+vhdl work "mux.vhd"
+vhdl work "decoder.vhd"
+vhdl work "controlunit.vhd"
 vhdl work "neander.vhd"
