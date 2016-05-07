@@ -5,12 +5,36 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <DeviceUsageSummary rev="1">
-<DesignStatistics TimeStamp="Fri May 06 23:49:23 2016"><group name="MiscellaneousStatistics">
+<DesignStatistics TimeStamp="Sat May 07 03:43:41 2016"><group name="MiscellaneousStatistics">
 <item name="AGG_BONDED_IO" rev="1">
-<attrib name="value" value="1"/></item>
+<attrib name="value" value="4"/></item>
 <item name="AGG_IO" rev="1">
-<attrib name="value" value="1"/></item>
+<attrib name="value" value="4"/></item>
+<item name="AGG_SLICE" rev="1">
+<attrib name="value" value="111"/></item>
+<item name="NUM_4_INPUT_LUT" rev="1">
+<attrib name="value" value="198"/></item>
+<item name="NUM_BONDED_IBUF" rev="1">
+<attrib name="value" value="3"/></item>
 <item name="NUM_BONDED_IOB" rev="1">
+<attrib name="value" value="1"/></item>
+<item name="NUM_BUFGMUX" rev="1">
+<attrib name="value" value="1"/></item>
+<item name="NUM_CYMUX" rev="1">
+<attrib name="value" value="53"/></item>
+<item name="NUM_LUT_RT" rev="1">
+<attrib name="value" value="1"/></item>
+<item name="NUM_MULT18X18SIO" rev="1">
+<attrib name="value" value="1"/></item>
+<item name="NUM_RAMB16" rev="1">
+<attrib name="value" value="1"/></item>
+<item name="NUM_SLICEL" rev="1">
+<attrib name="value" value="111"/></item>
+<item name="NUM_SLICE_FF" rev="1">
+<attrib name="value" value="110"/></item>
+<item name="NUM_XOR" rev="1">
+<attrib name="value" value="48"/></item>
+<item name="Xilinx Core blk_mem_gen_v7_3, Xilinx CORE Generator 14.7" rev="1">
 <attrib name="value" value="1"/></item>
 </group>
 </DesignStatistics>

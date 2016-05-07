@@ -32,8 +32,8 @@ architecture Behavioral of neander is
 			enable_neander : in STD_LOGIC;
 			N		: in STD_LOGIC;
 			Z		: in STD_LOGIC;
-			exec_NOP, exec_STA, exec_LDA, exec_ADD, exec_OR, exec_SHR, exec_SHL, exec_MUL,
-			exec_AND, exec_NOT, exec_JMP, exec_JN, exec_JZ, exec_HLT : in STD_LOGIC;
+			execNOP, execSTA, execLDA, execADD, execOR, execSHR, execSHL, execMUL,
+			execAND, execNOT, execJMP, execJN, execJZ, execHLT : in STD_LOGIC;
 						
 						
 			sel_ula		: out STD_LOGIC_VECTOR(2 downto 0);
@@ -53,8 +53,19 @@ architecture Behavioral of neander is
 			stop			: out STD_LOGIC
 		);
 	end component;
-
-
+	
+	COMPONENT blockMem is
+	  PORT (
+		 clka : IN STD_LOGIC;
+		 wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+		 addra : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+		 dina : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+		 clkb : IN STD_LOGIC;
+		 addrb : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+		 doutb : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
+	  );
+	END COMPONENT;
+	
 	component PC_register is
 		 port (
 			  clk         : in std_logic;
@@ -136,7 +147,6 @@ architecture Behavioral of neander is
 	-------------------------
 	--	PROGRAM SIGNALS
 	-------------------------
-	signal debug_s			: STD_LOGIC;
 	-- operation signal
 	signal exec_NOP 		: STD_LOGIC;
 	signal exec_STA 		: STD_LOGIC;
@@ -187,6 +197,7 @@ architecture Behavioral of neander is
 	signal PC_output		: STD_LOGIC_VECTOR (7 downto 0);
 	-- MEM
 	signal wr_enable		: STD_LOGIC_VECTOR (0 downto 0);
+	signal MEM_output		: STD_LOGIC_VECTOR (7 downto 0);
 
 begin
 
@@ -216,12 +227,12 @@ begin
 		N_out => NZ_outputN, Z_out => NZ_outputZ
 	);--
 
-	ula: ula
+	alu: ula
 	port map (
 		X => AC_output, Y => RDM_output, selector => ULA_selector, N => ULA_N, Z => ULA_Z, output => ULA_output
 	);--
 	
-	decoder: decoder
+	dec: decoder
 	port map (
 		instruction_in => RI_output,
 		s_exec_NOP => exec_NOP, s_exec_STA => exec_STA, s_exec_LDA => exec_LDA,
@@ -238,7 +249,7 @@ begin
 	
 	mux_rdm: mux
 	port map ( -- mux_rdm: 0 for MEM, 1 for AC
-		REG1 => mem_output, REG2 => AC_output, sel => muxrdm_sel, S => muxrdm_output
+		REG1 => MEM_output, REG2 => AC_output, sel => muxrdm_sel, S => muxrdm_output
 	);
 
 	PC: PC_register
@@ -252,11 +263,11 @@ begin
 		clk => clk, rst => rst, enable_neander => enable, N => NZ_outputN, Z => NZ_outputZ,
 		
 		-- operation signals
-		exec_NOP => exec_NOP, exec_STA => exec_STA, exec_LDA => exec_LDA,
-		exec_ADD => exec_ADD, exec_OR	 => exec_OR,  exec_SHR => exec_SHR,
-		exec_SHL => exec_SHL, exec_MUL => exec_MUL, exec_AND => exec_AND,
-		exec_NOT => exec_NOT, exec_JMP => exec_JMP, exec_JN  => exec_JN,
-		exec_JZ	=> exec_JZ,  exec_HLT => exec_HLT,
+		execNOP => exec_NOP, execSTA => exec_STA, execLDA => exec_LDA,
+		execADD => exec_ADD, execOR	 => exec_OR,  execSHR => exec_SHR,
+		execSHL => exec_SHL, execMUL => exec_MUL, execAND => exec_AND,
+		execNOT => exec_NOT, execJMP => exec_JMP, execJN  => exec_JN,
+		execJZ	=> exec_JZ,  execHLT => exec_HLT,
 		
 		sel_ula => ULA_selector,
 		loadAC  => AC_load , loadPC => PC_load, loadREM => REM_load,
@@ -268,7 +279,16 @@ begin
 		sel => MPX_sel, PC_inc => PC_increment,
 		sel_mux_RDM => muxrdm_sel, stop => debug_out
 	);
-
-			
+	
+	MEM: blockMem
+	port map (
+		clka => clk,
+		wea => wr_enable,
+		addra => REM_output,
+		dina => REM_output,		--- REVISAR ESSES FIOS
+		clkb => clk,				--- entender como funciona esssa memória
+		addrb => RDM_output,		--- realmente precisa ser dual?
+		doutb => MEM_output
+	);
 end Behavioral;
 

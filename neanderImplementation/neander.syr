@@ -3,13 +3,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.07 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.07 secs
  
 --> Reading design: neander.prj
@@ -108,31 +108,442 @@ Cores Search Directories           : {"ipcore_dir"  }
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "C:/Users/franc/Documents/neander/neanderImplementation/reg8.vhd" in Library work.
-Architecture behavioral of Entity reg8bits is up to date.
+Entity <reg8bits> compiled.
+Entity <reg8bits> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "C:/Users/franc/Documents/neander/neanderImplementation/regNZ.vhd" in Library work.
-Architecture behavioral of Entity regnz is up to date.
+Entity <regNZ> compiled.
+Entity <regNZ> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "C:/Users/franc/Documents/neander/neanderImplementation/ula.vhd" in Library work.
-Architecture behavioral of Entity ula is up to date.
+Entity <ula> compiled.
+Entity <ula> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "C:/Users/franc/Documents/neander/neanderImplementation/decoder.vhd" in Library work.
-Architecture behavioral of Entity decoder is up to date.
+Entity <decoder> compiled.
+Entity <decoder> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "C:/Users/franc/Documents/neander/neanderImplementation/mux.vhd" in Library work.
-Architecture behavioral of Entity mux is up to date.
+Entity <mux> compiled.
+Entity <mux> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "C:/Users/franc/Documents/neander/neanderImplementation/PC.vhd" in Library work.
-Architecture behavioral of Entity pc_register is up to date.
+Entity <PC_register> compiled.
+Entity <PC_register> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "C:/Users/franc/Documents/neander/neanderImplementation/controlunit.vhd" in Library work.
-Architecture behavioral of Entity controlunit is up to date.
+Entity <controlunit> compiled.
+Entity <controlunit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/franc/Documents/neander/neanderImplementation/ipcore_dir/blockMem.vhd" in Library work.
+Entity <blockMem> compiled.
+Entity <blockMem> (Architecture <blockMem_a>) compiled.
 Compiling vhdl file "C:/Users/franc/Documents/neander/neanderImplementation/neander.vhd" in Library work.
 Entity <neander> compiled.
-ERROR:HDLParsers:1202 - "C:/Users/franc/Documents/neander/neanderImplementation/neander.vhd" Line 222. Redeclaration of symbol ula.
-ERROR:HDLParsers:1202 - "C:/Users/franc/Documents/neander/neanderImplementation/neander.vhd" Line 232. Redeclaration of symbol decoder.
-ERROR:HDLParsers:3313 - "C:/Users/franc/Documents/neander/neanderImplementation/neander.vhd" Line 241. Undefined symbol 'mem_output'.  Should it be: rem_output?
-ERROR:HDLParsers:1209 - "C:/Users/franc/Documents/neander/neanderImplementation/neander.vhd" Line 241. mem_output: Undefined symbol (last report in this block)
-ERROR:HDLParsers:851 - "C:/Users/franc/Documents/neander/neanderImplementation/neander.vhd" Line 239. Formal REG1 of mux with no default value must be associated with an actual value.
+Entity <neander> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <neander> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <reg8bits> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <regNZ> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <ula> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <decoder> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <mux> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <PC_register> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <controlunit> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <neander> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:2211 - "C:/Users/franc/Documents/neander/neanderImplementation/neander.vhd" line 283: Instantiating black box module <blockMem>.
+Entity <neander> analyzed. Unit <neander> generated.
+
+Analyzing Entity <reg8bits> in library <work> (Architecture <Behavioral>).
+Entity <reg8bits> analyzed. Unit <reg8bits> generated.
+
+Analyzing Entity <regNZ> in library <work> (Architecture <Behavioral>).
+Entity <regNZ> analyzed. Unit <regNZ> generated.
+
+Analyzing Entity <ula> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:1610 - "C:/Users/franc/Documents/neander/neanderImplementation/ula.vhd" line 54: Width mismatch. <result> has a width of 8 bits but assigned expression is 16-bit wide.
+INFO:Xst:1561 - "C:/Users/franc/Documents/neander/neanderImplementation/ula.vhd" line 54: Mux is complete : default of case is discarded
+Entity <ula> analyzed. Unit <ula> generated.
+
+Analyzing Entity <decoder> in library <work> (Architecture <Behavioral>).
+Entity <decoder> analyzed. Unit <decoder> generated.
+
+Analyzing Entity <mux> in library <work> (Architecture <Behavioral>).
+Entity <mux> analyzed. Unit <mux> generated.
+
+Analyzing Entity <PC_register> in library <work> (Architecture <Behavioral>).
+Entity <PC_register> analyzed. Unit <PC_register> generated.
+
+Analyzing Entity <controlunit> in library <work> (Architecture <Behavioral>).
+Entity <controlunit> analyzed. Unit <controlunit> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <reg8bits>.
+    Related source file is "C:/Users/franc/Documents/neander/neanderImplementation/reg8.vhd".
+    Found 8-bit register for signal <reg>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <reg8bits> synthesized.
+
+
+Synthesizing Unit <regNZ>.
+    Related source file is "C:/Users/franc/Documents/neander/neanderImplementation/regNZ.vhd".
+    Found 1-bit register for signal <data_N>.
+    Found 1-bit register for signal <data_Z>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <regNZ> synthesized.
+
+
+Synthesizing Unit <ula>.
+    Related source file is "C:/Users/franc/Documents/neander/neanderImplementation/ula.vhd".
+WARNING:Xst:643 - "C:/Users/franc/Documents/neander/neanderImplementation/ula.vhd" line 54: The result of a 8x8-bit multiplication is partially used. Only the 8 least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
+    Found 8-bit 8-to-1 multiplexer for signal <result>.
+    Found 8-bit adder for signal <result$addsub0000> created at line 47.
+    Found 8x8-bit multiplier for signal <result$mult0000> created at line 54.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+	inferred   8 Multiplexer(s).
+Unit <ula> synthesized.
+
+
+Synthesizing Unit <decoder>.
+    Related source file is "C:/Users/franc/Documents/neander/neanderImplementation/decoder.vhd".
+WARNING:Xst:647 - Input <instruction_in<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <decoder> synthesized.
+
+
+Synthesizing Unit <mux>.
+    Related source file is "C:/Users/franc/Documents/neander/neanderImplementation/mux.vhd".
+Unit <mux> synthesized.
+
+
+Synthesizing Unit <PC_register>.
+    Related source file is "C:/Users/franc/Documents/neander/neanderImplementation/PC.vhd".
+    Found 8-bit up counter for signal <data>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <PC_register> synthesized.
+
+
+Synthesizing Unit <controlunit>.
+    Related source file is "C:/Users/franc/Documents/neander/neanderImplementation/controlunit.vhd".
+    Register <loadN> equivalent to <loadAC> has been removed
+    Register <loadZ> equivalent to <loadAC> has been removed
+    Using one-hot encoding for signal <current_state>.
+    Found 1-bit register for signal <sel_mux_RDM>.
+    Found 1-bit register for signal <loadRDM>.
+    Found 1-bit register for signal <loadAC>.
+    Found 1-bit register for signal <loadREM>.
+    Found 1-bit register for signal <PC_inc>.
+    Found 1-bit register for signal <loadPC>.
+    Found 3-bit register for signal <sel_ula>.
+    Found 1-bit register for signal <wr_enable_mem<0>>.
+    Found 1-bit register for signal <loadRI>.
+    Found 1-bit register for signal <sel>.
+    Found 14-bit register for signal <current_state>.
+    Found 14-bit register for signal <next_state>.
+    Found 32-bit down counter for signal <state_timer>.
+    Found 1-bit register for signal <stop_s>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  27 D-type flip-flop(s).
+Unit <controlunit> synthesized.
+
+
+Synthesizing Unit <neander>.
+    Related source file is "C:/Users/franc/Documents/neander/neanderImplementation/neander.vhd".
+Unit <neander> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 8x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 2
+ 32-bit down counter                                   : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 19
+ 1-bit register                                        : 12
+ 14-bit register                                       : 2
+ 3-bit register                                        : 1
+ 8-bit register                                        : 4
+# Multiplexers                                         : 1
+ 8-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/blockMem.ngc>.
+Loading core <blockMem> for timing and area information for instance <MEM>.
+WARNING:Xst:2677 - Node <reg_0> of sequential type is unconnected in block <RI>.
+WARNING:Xst:2677 - Node <reg_1> of sequential type is unconnected in block <RI>.
+WARNING:Xst:2677 - Node <reg_2> of sequential type is unconnected in block <RI>.
+WARNING:Xst:2677 - Node <reg_3> of sequential type is unconnected in block <RI>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 8x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 2
+ 32-bit down counter                                   : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 75
+ Flip-Flops                                            : 75
+# Multiplexers                                         : 1
+ 8-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <neander> ...
+
+Optimizing unit <reg8bits> ...
+
+Optimizing unit <ula> ...
+
+Optimizing unit <controlunit> ...
+WARNING:Xst:2677 - Node <RI/reg_3> of sequential type is unconnected in block <neander>.
+WARNING:Xst:2677 - Node <RI/reg_2> of sequential type is unconnected in block <neander>.
+WARNING:Xst:2677 - Node <RI/reg_1> of sequential type is unconnected in block <neander>.
+WARNING:Xst:2677 - Node <RI/reg_0> of sequential type is unconnected in block <neander>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <NZ/data_N> in Unit <neander> is equivalent to the following FF/Latch, which will be removed : <AC/reg_7> 
+Found area constraint ratio of 100 (+ 5) on block neander, actual ratio is 13.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 110
+ Flip-Flops                                            : 110
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : neander.ngr
+Top Level Output File Name         : neander
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 4
+
+Cell Usage :
+# BELS                             : 332
+#      GND                         : 2
+#      INV                         : 33
+#      LUT1                        : 1
+#      LUT2                        : 47
+#      LUT3                        : 59
+#      LUT3_D                      : 1
+#      LUT4                        : 57
+#      LUT4_L                      : 2
+#      MUXCY                       : 53
+#      MUXF5                       : 19
+#      MUXF6                       : 8
+#      VCC                         : 2
+#      XORCY                       : 48
+# FlipFlops/Latches                : 110
+#      FDC                         : 50
+#      FDCE                        : 38
+#      FDE                         : 20
+#      FDP                         : 2
+# RAMS                             : 1
+#      RAMB16_S36_S36              : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 3
+#      IBUF                        : 2
+#      OBUF                        : 1
+# MULTs                            : 1
+#      MULT18X18SIO                : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                      112  out of    960    11%  
+ Number of Slice Flip Flops:            110  out of   1920     5%  
+ Number of 4 input LUTs:                200  out of   1920    10%  
+ Number of IOs:                           4
+ Number of bonded IOBs:                   4  out of     83     4%  
+ Number of BRAMs:                         1  out of      4    25%  
+ Number of MULT18X18SIOs:                 1  out of      4    25%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 111   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 90    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 9.768ns (Maximum Frequency: 102.375MHz)
+   Minimum input arrival time before clock: 4.837ns
+   Maximum output required time after clock: 4.394ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 9.768ns (frequency: 102.375MHz)
+  Total number of paths / destination ports: 3162 / 189
+-------------------------------------------------------------------------
+Delay:               9.768ns (Levels of Logic = 6)
+  Source:            R_D_M/reg_3 (FF)
+  Destination:       NZ/data_Z (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: R_D_M/reg_3 to NZ/data_Z
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             8   0.591   0.757  R_D_M/reg_3 (R_D_M/reg_3)
+     MULT18X18SIO:B3->P3    1   3.657   0.455  alu/Mmult_result_mult0000 (alu/result_mult0000<3>)
+     LUT3:I2->O            1   0.704   0.000  alu/Mmux_result_43 (alu/Mmux_result_43)
+     MUXF5:I1->O           1   0.321   0.000  alu/Mmux_result_3_f5_2 (alu/Mmux_result_3_f53)
+     MUXF6:I1->O           2   0.521   0.622  alu/Mmux_result_2_f6_2 (ULA_output<3>)
+     LUT2:I0->O            1   0.704   0.424  alu/Z_cmp_eq000019 (alu/Z_cmp_eq000019)
+     LUT4:I3->O            1   0.704   0.000  alu/Z_cmp_eq000032 (ULA_Z)
+     FDCE:D                    0.308          NZ/data_Z
+    ----------------------------------------
+    Total                      9.768ns (7.510ns logic, 2.258ns route)
+                                       (76.9% logic, 23.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 22 / 22
+-------------------------------------------------------------------------
+Offset:              4.837ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       CU/current_state_13 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to CU/current_state_13
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            93   1.218   1.360  rst_IBUF (rst_IBUF)
+     LUT2:I1->O           14   0.704   1.000  CU/current_state_and00001 (CU/current_state_not0001_inv)
+     FDE:CE                    0.555          CU/current_state_0
+    ----------------------------------------
+    Total                      4.837ns (2.477ns logic, 2.360ns route)
+                                       (51.2% logic, 48.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.394ns (Levels of Logic = 1)
+  Source:            CU/stop_s (FF)
+  Destination:       debug_out (PAD)
+  Source Clock:      clk rising
+
+  Data Path: CU/stop_s to debug_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.591   0.531  CU/stop_s (CU/stop_s)
+     OBUF:I->O                 3.272          debug_out_OBUF (debug_out)
+    ----------------------------------------
+    Total                      4.394ns (3.863ns logic, 0.531ns route)
+                                       (87.9% logic, 12.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.28 secs
+ 
 --> 
 
-Total memory usage is 241264 kilobytes
+Total memory usage is 264484 kilobytes
 
-Number of errors   :    5 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   12 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
 

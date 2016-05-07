@@ -37,18 +37,42 @@ INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and
 
 Data Sheet report:
 -----------------
-No constraints were found to generate data for the Data Sheet Report section.
-Use the Advanced Analysis (-a) option or generate global constraints for each
-clock, its pad to setup and clock to pad paths, and a pad to pad constraint.
+All values displayed in nanoseconds (ns)
 
-Analysis completed Fri May 06 23:49:32 2016 
+Setup/Hold to clock clk
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+enable      |    2.350(R)|   -0.208(R)|clk_BUFGP         |   0.000|
+rst         |    3.370(R)|    0.372(R)|clk_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+debug_out   |    7.971(R)|clk_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   10.004|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Sat May 07 03:43:50 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 125 MB
+Peak Memory Usage: 127 MB
 
 
 

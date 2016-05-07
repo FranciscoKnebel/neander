@@ -239,7 +239,6 @@ begin
 				state_timer := state_timer -1;
 			end if;
 		end if;
-		
-		stop <= stop_s;
 	end process;
+	stop <= stop_s;
 end;

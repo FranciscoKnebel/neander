@@ -13,6 +13,7 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.std_logic_signed.all;
 use IEEE.std_logic_arith.all;
+USE ieee.numeric_std.all;
 
 entity ula is
    Port ( 	
@@ -35,7 +36,7 @@ begin
 	e1 <= X;
 	e2 <= Y;
 
-	process(selector)
+	process(selector, e1, e2)
 	begin
 		-- 000 ADD	-- 001 AND
 		-- 010 OR	-- 011 NOT
@@ -48,8 +49,8 @@ begin
 			when "010" => result <= e1 OR e2; 					-- OR
 			when "011" => result <= not(e1);						-- NOT
 			when "100" => result <= e2;							-- LDA
-			when "101" => result <= "0" AND e1(7 downto 1); -- SHR
-			when "110" => result <= e1(6 downto 0) AND "0"; -- SHL
+			when "101" => result <= "0" & e1(7 downto 1); 	-- SHR
+			when "110" => result <= e1(6 downto 0) & "0"; 	-- SHL
 			when "111" => result <= e1 * e2; 					-- MUL
 			when others => result <= e2;
 		end case;

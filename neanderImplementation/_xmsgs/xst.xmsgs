@@ -5,19 +5,46 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLParsers" num="1202" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/franc/Documents/neander/neanderImplementation/neander.vhd</arg>&quot; Line <arg fmt="%d" index="2">222</arg>. Redeclaration of symbol <arg fmt="%s" index="3">ula</arg>.
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/franc/Documents/neander/neanderImplementation/neander.vhd</arg>&quot; line <arg fmt="%d" index="2">283</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">blockMem</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLParsers" num="1202" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/franc/Documents/neander/neanderImplementation/neander.vhd</arg>&quot; Line <arg fmt="%d" index="2">232</arg>. Redeclaration of symbol <arg fmt="%s" index="3">decoder</arg>.
+<msg type="warning" file="Xst" num="1610" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/franc/Documents/neander/neanderImplementation/ula.vhd</arg>&quot; line <arg fmt="%d" index="2">54</arg>: Width mismatch. &lt;<arg fmt="%s" index="3">result</arg>&gt; has a width of <arg fmt="%d" index="4">8</arg> bits but assigned expression is <arg fmt="%d" index="5">16</arg>-bit wide.
 </msg>
 
-<msg type="error" file="HDLParsers" num="3313" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/franc/Documents/neander/neanderImplementation/neander.vhd</arg>&quot; Line <arg fmt="%d" index="2">241</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">mem_output</arg>&apos;.  Should it be: <arg fmt="%s" index="4">rem_output</arg>?
+<msg type="info" file="Xst" num="1561" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/franc/Documents/neander/neanderImplementation/ula.vhd</arg>&quot; line <arg fmt="%d" index="2">54</arg>: Mux is complete : default of case is discarded
 </msg>
 
-<msg type="error" file="HDLParsers" num="1209" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/franc/Documents/neander/neanderImplementation/neander.vhd</arg>&quot; Line <arg fmt="%d" index="2">241</arg>. <arg fmt="%s" index="3">mem_output</arg>: Undefined symbol (last report in this block)
+<msg type="warning" file="Xst" num="643" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/franc/Documents/neander/neanderImplementation/ula.vhd</arg>&quot; line <arg fmt="%d" index="2">54</arg>: The result of a <arg fmt="%d" index="3">8</arg>x<arg fmt="%d" index="4">8</arg>-bit multiplication is partially used. Only the <arg fmt="%d" index="5">8</arg> least significant bits are used. If you are doing this on purpose, you may safely ignore this warning. Otherwise, make sure you are not losing information, leading to unexpected circuit behavior.
 </msg>
 
-<msg type="error" file="HDLParsers" num="851" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/franc/Documents/neander/neanderImplementation/neander.vhd</arg>&quot; Line <arg fmt="%d" index="2">239</arg>. Formal <arg fmt="%s" index="3">REG1</arg> of <arg fmt="%s" index="4">mux</arg> with no default value must be associated with an actual value.
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">instruction_in&lt;3:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">reg_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">RI</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">reg_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">RI</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">reg_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">RI</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">reg_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">RI</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">RI/reg_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neander</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">RI/reg_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neander</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">RI/reg_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neander</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">RI/reg_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">neander</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">NZ/data_N</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">neander</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;AC/reg_7&gt; </arg>
 </msg>
 
 </messages>

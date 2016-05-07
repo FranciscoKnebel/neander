@@ -1,5 +1,0 @@
-set -tmpdir "C:/Users/franc/Documents/neander/neanderImplementation/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/franc/Documents/neander/neanderImplementation/xst"
-elaborate
--ifn reg8bits.prj
--ifmt mixed
