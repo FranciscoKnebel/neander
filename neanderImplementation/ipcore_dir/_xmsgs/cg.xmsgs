@@ -8,54 +8,5 @@
 <msg type="info" file="sim" num="172" delta="old" >Generating IP...
 </msg>
 
-<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Unable to find X:\Windows</arg>
-</msg>
-
-<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Config\Desktop\neander\neanderImplementation\memoria.coe</arg>
-</msg>
-
-<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Coregen is looking for X:\Windows</arg>
-</msg>
-
-<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Config\Desktop\neander\neanderImplementation\memoria.coe</arg>
-</msg>
-
-<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Unable to find X:\Windows</arg>
-</msg>
-
-<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Config\Desktop\neander\neanderImplementation\memoria.coe</arg>
-</msg>
-
-<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Coregen is looking for X:\Windows</arg>
-</msg>
-
-<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Config\Desktop\neander\neanderImplementation\memoria.coe</arg>
-</msg>
-
-<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">IP initializer could not set IP core parameters on IP model</arg>
-</msg>
-
-<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Unable to find X:\Windows</arg>
-</msg>
-
-<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Config\Desktop\neander\neanderImplementation\memoria.coe</arg>
-</msg>
-
-<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Coregen is looking for X:\Windows</arg>
-</msg>
-
-<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">   Config\Desktop\neander\neanderImplementation\memoria.coe</arg>
-</msg>
-
-<msg type="error" file="sim" num="0" delta="new" ><arg fmt="%s" index="1">Failed to initialize IP model.</arg>
-</msg>
-
-<msg type="error" file="sim" num="0" delta="new" >Failed executing Tcl generator.
-</msg>
-
-<msg type="error" file="sim" num="0" delta="new" >Failed to generate &apos;blockMem&apos;.  Failed executing Tcl generator.
-
-</msg>
-
 </messages>
 

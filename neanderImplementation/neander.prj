@@ -1,4 +1,4 @@
-vhdl work "ipcore_dir/blockMem.vhd"
+vhdl work "ipcore_dir/dualBRAM.vhd"
 vhdl work "ula.vhd"
 vhdl work "regNZ.vhd"
 vhdl work "reg8.vhd"

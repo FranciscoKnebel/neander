@@ -44,8 +44,8 @@ Setup/Hold to clock clk
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-enable      |    2.350(R)|   -0.208(R)|clk_BUFGP         |   0.000|
-rst         |    3.370(R)|    0.372(R)|clk_BUFGP         |   0.000|
+enable      |    2.367(R)|   -0.380(R)|clk_BUFGP         |   0.000|
+rst         |    3.092(R)|    0.402(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -53,7 +53,7 @@ Clock clk to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-debug_out   |    7.971(R)|clk_BUFGP         |   0.000|
+debug_out   |    7.705(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -61,11 +61,11 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |   10.004|         |         |         |
+clk            |    6.911|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Sat May 07 03:43:50 2016 
+Analysis completed Tue May 10 19:50:30 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:

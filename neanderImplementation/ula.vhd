@@ -24,13 +24,15 @@ entity ula is
 		N 	: out STD_LOGIC;
 		Z	: out STD_LOGIC;
 		
-		output : out STD_LOGIC_VECTOR (7 downto 0)
+		output  : out STD_LOGIC_VECTOR (7 downto 0);
+		carryMUL: out STD_LOGIC_VECTOR (7 downto 0) -- need to make this save to address 100, add control unit state
 	);
 end ula;
 
 architecture Behavioral of ula is
-	signal result : STD_LOGIC_VECTOR(7 downto 0);
-   signal e1, e2 : STD_LOGIC_VECTOR(7 downto 0);
+	signal result  : STD_LOGIC_VECTOR(7 downto 0);
+   signal e1, e2  : STD_LOGIC_VECTOR(7 downto 0);
+	signal MULTIPLICATION: STD_LOGIC_VECTOR(15 downto 0);
 begin
 
 	e1 <= X;
@@ -44,14 +46,15 @@ begin
 		-- 110 SHL	-- 111 MUL
 
 		case selector is
-			when "000" => result <= e1 + e2; 					-- ADD
-			when "001" => result <= e1 AND e2; 					-- AND
-			when "010" => result <= e1 OR e2; 					-- OR
-			when "011" => result <= not(e1);						-- NOT
-			when "100" => result <= e2;							-- LDA
-			when "101" => result <= "0" & e1(7 downto 1); 	-- SHR
-			when "110" => result <= e1(6 downto 0) & "0"; 	-- SHL
-			when "111" => result <= e1 * e2; 					-- MUL
+			when "000" => 	result <= e1 + e2; 					-- ADD
+			when "001" => 	result <= e1 AND e2; 				-- AND
+			when "010" => 	result <= e1 OR e2; 					-- OR
+			when "011" => 	result <= not(e1);					-- NOT
+			when "100" => 	result <= e2;							-- LDA
+			when "101" => 	result <= "0" & e1(7 downto 1); 	-- SHR
+			when "110" => 	result <= e1(6 downto 0) & "0"; 	-- SHL
+			when "111" => 	MULTIPLICATION <= e1 * e2; 		-- MUL
+								result <= MULTIPLICATION(7 downto 0); -- lsb								
 			when others => result <= e2;
 		end case;
 		
@@ -65,6 +68,7 @@ begin
 		-- Negative
 		N <= result(7);
 	end process;
+	carryMUL <= MULTIPLICATION(15 downto 8);
 	output <= result;
 		
 end Behavioral;

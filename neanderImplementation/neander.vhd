@@ -54,14 +54,17 @@ architecture Behavioral of neander is
 		);
 	end component;
 	
-	COMPONENT blockMem is
+	COMPONENT dualBRAM
 	  PORT (
 		 clka : IN STD_LOGIC;
 		 wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
 		 addra : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
 		 dina : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+		 douta : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
 		 clkb : IN STD_LOGIC;
+		 web : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
 		 addrb : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+		 dinb : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
 		 doutb : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
 	  );
 	END COMPONENT;
@@ -141,7 +144,8 @@ architecture Behavioral of neander is
 			  selector	  : in  STD_LOGIC_VECTOR (2 downto 0);
 			  N           : out STD_LOGIC;
 			  Z           : out STD_LOGIC;
-			  output  	  : out STD_LOGIC_VECTOR (7 downto 0)
+			  output  	  : out STD_LOGIC_VECTOR (7 downto 0);
+			  carryMUL	  : out STD_LOGIC_VECTOR (7 downto 0)
 		 );
 	end component;
 	-------------------------
@@ -174,7 +178,8 @@ architecture Behavioral of neander is
 	signal ULA_selector	: STD_LOGIC_VECTOR (2 downto 0);
 	signal ULA_N			: STD_LOGIC;
 	signal ULA_Z			: STD_LOGIC;
-	signal ULA_output		: STD_LOGIC_VECTOR (7 downto 0);	
+	signal ULA_output		: STD_LOGIC_VECTOR (7 downto 0);
+	signal ULA_carryMUL	: STD_LOGIC_VECTOR (7 downto 0);
 	-- AC
 	signal AC_output		: STD_LOGIC_VECTOR (7 downto 0);	
 	-- NZ
@@ -198,6 +203,7 @@ architecture Behavioral of neander is
 	-- MEM
 	signal wr_enable		: STD_LOGIC_VECTOR (0 downto 0);
 	signal MEM_output		: STD_LOGIC_VECTOR (7 downto 0);
+	signal MEM_output2	: STD_LOGIC_VECTOR (7 downto 0);
 
 begin
 
@@ -229,7 +235,7 @@ begin
 
 	alu: ula
 	port map (
-		X => AC_output, Y => RDM_output, selector => ULA_selector, N => ULA_N, Z => ULA_Z, output => ULA_output
+		X => AC_output, Y => RDM_output, selector => ULA_selector, N => ULA_N, Z => ULA_Z, output => ULA_output, carryMUL => ULA_carryMUL
 	);--
 	
 	dec: decoder
@@ -280,15 +286,19 @@ begin
 		sel_mux_RDM => muxrdm_sel, stop => debug_out
 	);
 	
-	MEM: blockMem
-	port map (
+	MEM : dualBRAM
+	PORT MAP (
 		clka => clk,
 		wea => wr_enable,
 		addra => REM_output,
-		dina => REM_output,		--- REVISAR ESSES FIOS
-		clkb => clk,				--- entender como funciona esssa memória
-		addrb => RDM_output,		--- realmente precisa ser dual?
-		doutb => MEM_output
+		dina => RDM_output,
+		douta => MEM_output,
+		
+		clkb => clk,
+		web => "0",
+		addrb => "00000000",
+		dinb => "00000000",
+		doutb => MEM_output2
 	);
 end Behavioral;
 

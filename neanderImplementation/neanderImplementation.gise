@@ -28,7 +28,6 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
-    <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="neander.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="neander.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="neander.lso"/>
@@ -58,6 +57,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="neander_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="neander_pad.txt" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="neander_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="neander_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="neander_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="neander_usage.xml"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="neander_vhdl.prj"/>
@@ -69,33 +69,33 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1462603409" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-7018049442512181694" xil_pn:start_ts="1462603409">
+    <transform xil_pn:end_ts="1462920608" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-7018049442512181694" xil_pn:start_ts="1462920608">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1462603409" xil_pn:in_ck="1689708817996032305" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-257382864192766773" xil_pn:start_ts="1462603409">
+    <transform xil_pn:end_ts="1462920608" xil_pn:in_ck="1803938396441156975" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-257382864192766773" xil_pn:start_ts="1462920608">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="ipcore_dir/blockMem.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/blockMem.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/dualBRAM.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/dualBRAM.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1462589765" xil_pn:in_ck="420158772740417984" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1462589765">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1462603409" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="33625301441434560" xil_pn:start_ts="1462603409">
+    <transform xil_pn:end_ts="1462919919" xil_pn:in_ck="4189734861429532094" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1462919918">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1462603409" xil_pn:in_ck="420158772740417984" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280822507185" xil_pn:start_ts="1462603409">
+    <transform xil_pn:end_ts="1462920608" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="33625301441434560" xil_pn:start_ts="1462920608">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1462603409" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-4471847085530940907" xil_pn:start_ts="1462603409">
+    <transform xil_pn:end_ts="1462920608" xil_pn:in_ck="4189734861429532094" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280822507185" xil_pn:start_ts="1462920608">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1462603416" xil_pn:in_ck="5548235771714204712" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6550911810975936024" xil_pn:start_ts="1462603409">
+    <transform xil_pn:end_ts="1462920608" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-4471847085530940907" xil_pn:start_ts="1462920608">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1462920614" xil_pn:in_ck="833524439605888486" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6550911810975936024" xil_pn:start_ts="1462920608">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -114,11 +114,11 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1462603416" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="1037374326166014965" xil_pn:start_ts="1462603416">
+    <transform xil_pn:end_ts="1462920614" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="1037374326166014965" xil_pn:start_ts="1462920614">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1462603419" xil_pn:in_ck="7866270280172086050" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="6709157851508686328" xil_pn:start_ts="1462603416">
+    <transform xil_pn:end_ts="1462920618" xil_pn:in_ck="5302841505745941664" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="6709157851508686328" xil_pn:start_ts="1462920614">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_ngo"/>
@@ -127,8 +127,9 @@
       <outfile xil_pn:name="neander.ngd"/>
       <outfile xil_pn:name="neander_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1462603422" xil_pn:in_ck="173302491204826468" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1462603419">
+    <transform xil_pn:end_ts="1462920621" xil_pn:in_ck="173302491204826468" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1462920618">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="neander.pcf"/>
@@ -140,8 +141,9 @@
       <outfile xil_pn:name="neander_summary.xml"/>
       <outfile xil_pn:name="neander_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1462603431" xil_pn:in_ck="7887949007688636029" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1462603422">
+    <transform xil_pn:end_ts="1462920631" xil_pn:in_ck="7887949007688636029" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1462920621">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="neander.ncd"/>
@@ -154,7 +156,7 @@
       <outfile xil_pn:name="neander_pad.txt"/>
       <outfile xil_pn:name="neander_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1462603431" xil_pn:in_ck="173302491204826336" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1462603429">
+    <transform xil_pn:end_ts="1462920631" xil_pn:in_ck="173302491204826336" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1462920629">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
