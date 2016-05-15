@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/franc/Documents/neander/a/n.xst" -ofn "C:/Users/franc/Documents/neander/a/n.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc n.ucf -p xc3s100e-cp132-4 n.ngc n.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o n_map.ncd n.ngd n.pcf 
+par -w -intstyle ise -ol high -t 1 n_map.ncd n.ncd n.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml n.twx n.ncd -o n.twr n.pcf -ucf n.ucf 
+bitgen -intstyle ise -f n.ut n.ncd 

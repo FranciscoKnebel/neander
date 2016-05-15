@@ -1,0 +1,3 @@
+vhdl work "binToBCD.vhd"
+vhdl work "bcdTo7SEG.vhd"
+vhdl work "n.vhd"

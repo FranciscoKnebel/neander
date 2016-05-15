@@ -1,9 +1,9 @@
 --------------------------------------------------------------------------------
-Release 14.7 Trace  (nt)
+Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n
-3 -fastpaths -xml neander.twx neander.ncd -o neander.twr neander.pcf
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml neander.twx neander.ncd -o neander.twr neander.pcf
 
 Design file:              neander.ncd
 Physical constraint file: neander.pcf
@@ -44,8 +44,8 @@ Setup/Hold to clock clk
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-enable      |    2.367(R)|   -0.380(R)|clk_BUFGP         |   0.000|
-rst         |    3.092(R)|    0.402(R)|clk_BUFGP         |   0.000|
+enable      |    2.078(R)|   -0.310(R)|clk_BUFGP         |   0.000|
+rst         |    1.854(R)|    0.836(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock clk to Pad
@@ -53,7 +53,7 @@ Clock clk to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-debug_out   |    7.705(R)|clk_BUFGP         |   0.000|
+debug_out   |    7.702(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -61,18 +61,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    6.911|         |         |         |
+clk            |    7.237|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Tue May 10 19:50:30 2016 
+Analysis completed Sun May 15 15:59:43 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 127 MB
+Peak Memory Usage: 155 MB
 
 
 

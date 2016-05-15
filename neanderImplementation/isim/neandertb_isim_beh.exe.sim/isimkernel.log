@@ -1,0 +1,10 @@
+Command line:
+   neandertb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  60897
+
+Sun May 15 15:59:55 2016
+
+
+ Elaboration Time: 0.03125 sec

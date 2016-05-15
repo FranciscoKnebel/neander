@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/franc/Documents/neander/neanderImplementation/neandertb_isim_beh.exe" -prj "C:/Users/franc/Documents/neander/neanderImplementation/neandertb_beh.prj" "work.neandertb" 

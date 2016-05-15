@@ -1,0 +1,235 @@
+ISim log file
+Running: C:\Users\franc\Documents\neander\neanderImplementation\neandertb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/franc/Documents/neander/neanderImplementation/neandertb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /neandertb/uut/alu/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Finished circuit initialization process.
+at 5 ns(1): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/neandertb/uut/MEM/U0/native_mem_module/mem_module/).
+at 5 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 5 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 5 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 5 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: UUUUUUUU, B read address: 00000000
+
+at 15 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 15 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 15 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 15 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: UUUUUUUU, B read address: 00000000
+
+at 25 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 25 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 25 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 25 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: UUUUUUUU, B read address: 00000000
+
+at 35 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 35 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 35 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 35 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: UUUUUUUU, B read address: 00000000
+
+at 45 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 45 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 45 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 45 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: UUUUUUUU, B read address: 00000000
+
+# run 50ns
+# restart
+# run 50ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 5 ns(1): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/neandertb/uut/MEM/U0/native_mem_module/mem_module/).
+at 5 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 5 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 5 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 5 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: UUUUUUUU, B read address: 00000000
+
+at 15 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 15 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 15 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 15 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: UUUUUUUU, B read address: 00000000
+
+at 25 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 25 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 25 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 25 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: UUUUUUUU, B read address: 00000000
+
+at 35 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 35 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 35 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 35 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: UUUUUUUU, B read address: 00000000
+
+at 45 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 45 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 45 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 45 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: UUUUUUUU, B read address: 00000000
+
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run all
+Stopped at time : 14070015 ns : File "C:/Users/franc/Documents/neander/neanderImplementation/reg8.vhd" Line 35
+# restart
+# run 50ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 5 ns(1): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/neandertb/uut/MEM/U0/native_mem_module/mem_module/).
+at 5 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 5 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 5 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 5 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: UUUUUUUU, B read address: 00000000
+
+at 15 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 15 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 15 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 15 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: UUUUUUUU, B read address: 00000000
+
+at 25 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 25 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 25 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 25 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: UUUUUUUU, B read address: 00000000
+
+at 35 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 35 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 35 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 35 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: UUUUUUUU, B read address: 00000000
+
+at 45 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 45 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 45 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 45 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: UUUUUUUU, B read address: 00000000
+
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# restart
+# run 50ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 5 ns(1): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/neandertb/uut/MEM/U0/native_mem_module/mem_module/).
+at 5 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 5 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 5 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 5 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: UUUUUUUU, B read address: 00000000
+
+at 15 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 15 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 15 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 15 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: UUUUUUUU, B read address: 00000000
+
+at 25 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 25 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 25 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 25 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: UUUUUUUU, B read address: 00000000
+
+at 35 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 35 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 35 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 35 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: UUUUUUUU, B read address: 00000000
+
+at 45 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 45 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 45 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 45 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: UUUUUUUU, B read address: 00000000
+
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# restart
+# run 50ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 5 ns(1): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/neandertb/uut/MEM/U0/native_mem_module/mem_module/).
+at 5 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 5 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 5 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 5 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: UUUUUUUU, B read address: 00000000
+
+at 15 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 15 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 15 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 15 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: UUUUUUUU, B read address: 00000000
+
+at 25 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 25 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 25 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 25 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: UUUUUUUU, B read address: 00000000
+
+at 35 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 35 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 35 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 35 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: UUUUUUUU, B read address: 00000000
+
+at 45 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 45 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 45 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 45 ns(1), Instance /neandertb/uut/MEM/U0/native_mem_module/mem_module/ : Warning: blk_mem_gen_v7_3 WARNING: collision detected: A write address: UUUUUUUU, B read address: 00000000
+
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns
+# run 50ns

@@ -1,4 +1,4 @@
-Release 14.7 - xst P.20131013 (nt)
+Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
@@ -108,80 +108,72 @@ Cores Search Directories           : {"ipcore_dir"  }
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "C:/Users/franc/Documents/neander/neanderImplementation/reg8.vhd" in Library work.
-Entity <reg8bits> compiled.
-Entity <reg8bits> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity reg8bits is up to date.
 Compiling vhdl file "C:/Users/franc/Documents/neander/neanderImplementation/regNZ.vhd" in Library work.
-Entity <regNZ> compiled.
-Entity <regNZ> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity regnz is up to date.
 Compiling vhdl file "C:/Users/franc/Documents/neander/neanderImplementation/ula.vhd" in Library work.
-Entity <ula> compiled.
-Entity <ula> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity ula is up to date.
 Compiling vhdl file "C:/Users/franc/Documents/neander/neanderImplementation/decoder.vhd" in Library work.
-Entity <decoder> compiled.
-Entity <decoder> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity decoder is up to date.
 Compiling vhdl file "C:/Users/franc/Documents/neander/neanderImplementation/mux.vhd" in Library work.
-Entity <mux> compiled.
-Entity <mux> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity mux is up to date.
 Compiling vhdl file "C:/Users/franc/Documents/neander/neanderImplementation/PC.vhd" in Library work.
-Entity <PC_register> compiled.
-Entity <PC_register> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity pc_register is up to date.
 Compiling vhdl file "C:/Users/franc/Documents/neander/neanderImplementation/controlunit.vhd" in Library work.
-Entity <controlunit> compiled.
-Entity <controlunit> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity controlunit is up to date.
 Compiling vhdl file "C:/Users/franc/Documents/neander/neanderImplementation/ipcore_dir/dualBRAM.vhd" in Library work.
-Entity <dualBRAM> compiled.
-Entity <dualBRAM> (Architecture <dualBRAM_a>) compiled.
+Entity <dualbram> compiled.
+Entity <dualbram> (Architecture <dualbram_a>) compiled.
 Compiling vhdl file "C:/Users/franc/Documents/neander/neanderImplementation/neander.vhd" in Library work.
-Entity <neander> compiled.
-Entity <neander> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity neander is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <neander> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <neander> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <reg8bits> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <reg8bits> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <regNZ> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <regNZ> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <ula> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <ula> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <decoder> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <decoder> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <mux> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <mux> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <PC_register> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <PC_register> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <controlunit> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <controlunit> in library <work> (architecture <behavioral>).
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <neander> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <neander> in library <work> (Architecture <behavioral>).
 WARNING:Xst:2211 - "C:/Users/franc/Documents/neander/neanderImplementation/neander.vhd" line 289: Instantiating black box module <dualBRAM>.
 Entity <neander> analyzed. Unit <neander> generated.
 
-Analyzing Entity <reg8bits> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <reg8bits> in library <work> (Architecture <behavioral>).
 Entity <reg8bits> analyzed. Unit <reg8bits> generated.
 
-Analyzing Entity <regNZ> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <regNZ> in library <work> (Architecture <behavioral>).
 Entity <regNZ> analyzed. Unit <regNZ> generated.
 
-Analyzing Entity <ula> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <ula> in library <work> (Architecture <behavioral>).
 INFO:Xst:1561 - "C:/Users/franc/Documents/neander/neanderImplementation/ula.vhd" line 57: Mux is complete : default of case is discarded
 Entity <ula> analyzed. Unit <ula> generated.
 
-Analyzing Entity <decoder> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <decoder> in library <work> (Architecture <behavioral>).
 Entity <decoder> analyzed. Unit <decoder> generated.
 
-Analyzing Entity <mux> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <mux> in library <work> (Architecture <behavioral>).
 Entity <mux> analyzed. Unit <mux> generated.
 
-Analyzing Entity <PC_register> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <PC_register> in library <work> (Architecture <behavioral>).
 Entity <PC_register> analyzed. Unit <PC_register> generated.
 
-Analyzing Entity <controlunit> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <controlunit> in library <work> (Architecture <behavioral>).
 Entity <controlunit> analyzed. Unit <controlunit> generated.
 
 
@@ -257,11 +249,9 @@ Synthesizing Unit <controlunit>.
     Found 1-bit register for signal <sel>.
     Found 14-bit register for signal <current_state>.
     Found 14-bit register for signal <next_state>.
-    Found 32-bit down counter for signal <state_timer>.
     Found 1-bit register for signal <stop_s>.
     Summary:
-	inferred   1 Counter(s).
-	inferred  27 D-type flip-flop(s).
+	inferred  13 D-type flip-flop(s).
 Unit <controlunit> synthesized.
 
 
@@ -280,8 +270,7 @@ Macro Statistics
  8x8-bit multiplier                                    : 1
 # Adders/Subtractors                                   : 1
  8-bit adder                                           : 1
-# Counters                                             : 2
- 32-bit down counter                                   : 1
+# Counters                                             : 1
  8-bit up counter                                      : 1
 # Registers                                            : 19
  1-bit register                                        : 12
@@ -314,8 +303,7 @@ Macro Statistics
  8x8-bit multiplier                                    : 1
 # Adders/Subtractors                                   : 1
  8-bit adder                                           : 1
-# Counters                                             : 2
- 32-bit down counter                                   : 1
+# Counters                                             : 1
  8-bit up counter                                      : 1
 # Registers                                            : 75
  Flip-Flops                                            : 75
@@ -353,7 +341,7 @@ WARNING:Xst:2677 - Node <alu/MULTIPLICATION_8> of sequential type is unconnected
 Mapping all equations...
 Building and optimizing final netlist ...
 INFO:Xst:2261 - The FF/Latch <NZ/data_N> in Unit <neander> is equivalent to the following FF/Latch, which will be removed : <AC/reg_7> 
-Found area constraint ratio of 100 (+ 5) on block neander, actual ratio is 13.
+Found area constraint ratio of 100 (+ 5) on block neander, actual ratio is 9.
 
 Final Macro Processing ...
 
@@ -361,8 +349,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 110
- Flip-Flops                                            : 110
+# Registers                                            : 78
+ Flip-Flops                                            : 78
 
 =========================================================================
 
@@ -391,26 +379,25 @@ Design Statistics
 # IOs                              : 4
 
 Cell Usage :
-# BELS                             : 333
+# BELS                             : 189
 #      GND                         : 2
-#      INV                         : 33
-#      LUT1                        : 1
-#      LUT2                        : 47
+#      INV                         : 2
+#      LUT2                        : 14
 #      LUT3                        : 59
 #      LUT3_D                      : 1
 #      LUT3_L                      : 1
-#      LUT4                        : 50
+#      LUT4                        : 42
 #      LUT4_D                      : 7
 #      LUT4_L                      : 2
-#      MUXCY                       : 53
+#      MUXCY                       : 14
 #      MUXF5                       : 19
 #      MUXF6                       : 8
 #      VCC                         : 2
-#      XORCY                       : 48
-# FlipFlops/Latches                : 118
-#      FDC                         : 50
+#      XORCY                       : 16
+# FlipFlops/Latches                : 86
+#      FDC                         : 32
 #      FDCE                        : 38
-#      FDE                         : 20
+#      FDE                         : 6
 #      FDP                         : 2
 #      LD                          : 8
 # RAMS                             : 1
@@ -429,9 +416,9 @@ Device utilization summary:
 
 Selected Device : 3s100ecp132-4 
 
- Number of Slices:                      117  out of    960    12%  
- Number of Slice Flip Flops:            118  out of   1920     6%  
- Number of 4 input LUTs:                201  out of   1920    10%  
+ Number of Slices:                       79  out of    960     8%  
+ Number of Slice Flip Flops:             86  out of   1920     4%  
+ Number of 4 input LUTs:                128  out of   1920     6%  
  Number of IOs:                           4
  Number of bonded IOBs:                   4  out of     83     4%  
  Number of BRAMs:                         1  out of      4    25%  
@@ -459,7 +446,7 @@ Clock Information:
 ---------------------------------------------------------------+------------------------------+-------+
 Clock Signal                                                   | Clock buffer(FF name)        | Load  |
 ---------------------------------------------------------------+------------------------------+-------+
-clk                                                            | BUFGP                        | 111   |
+clk                                                            | BUFGP                        | 79    |
 alu/MULTIPLICATION_cmp_eq0000(alu/MULTIPLICATION_cmp_eq00001:O)| NONE(*)(alu/MULTIPLICATION_7)| 8     |
 ---------------------------------------------------------------+------------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
@@ -472,7 +459,7 @@ Asynchronous Control Signals Information:
 -----------------------------------+------------------------+-------+
 Control Signal                     | Buffer(FF name)        | Load  |
 -----------------------------------+------------------------+-------+
-rst                                | IBUF                   | 90    |
+rst                                | IBUF                   | 72    |
 -----------------------------------+------------------------+-------+
 
 Timing Summary:
@@ -480,7 +467,7 @@ Timing Summary:
 Speed Grade: -4
 
    Minimum period: 8.118ns (Maximum Frequency: 123.183MHz)
-   Minimum input arrival time before clock: 4.837ns
+   Minimum input arrival time before clock: 4.458ns
    Maximum output required time after clock: 4.394ns
    Maximum combinational path delay: No path found
 
@@ -491,7 +478,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 8.118ns (frequency: 123.183MHz)
-  Total number of paths / destination ports: 3010 / 181
+  Total number of paths / destination ports: 1010 / 135
 -------------------------------------------------------------------------
 Delay:               8.118ns (Levels of Logic = 8)
   Source:            AC/reg_0 (FF)
@@ -519,23 +506,23 @@ Delay:               8.118ns (Levels of Logic = 8)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 22 / 22
+  Total number of paths / destination ports: 8 / 8
 -------------------------------------------------------------------------
-Offset:              4.837ns (Levels of Logic = 2)
+Offset:              4.458ns (Levels of Logic = 2)
   Source:            rst (PAD)
-  Destination:       CU/current_state_13 (FF)
+  Destination:       CU/sel_ula_2 (FF)
   Destination Clock: clk rising
 
-  Data Path: rst to CU/current_state_13
+  Data Path: rst to CU/sel_ula_2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            93   1.218   1.360  rst_IBUF (rst_IBUF)
-     LUT2:I1->O           14   0.704   1.000  CU/current_state_and00001 (CU/current_state_not0001_inv)
-     FDE:CE                    0.555          CU/current_state_0
+     IBUF:I->O            74   1.218   1.450  rst_IBUF (rst_IBUF)
+     LUT4:I0->O            3   0.704   0.531  CU/sel_ula_and00001 (CU/sel_ula_and0000)
+     FDE:CE                    0.555          CU/sel_ula_0
     ----------------------------------------
-    Total                      4.837ns (2.477ns logic, 2.360ns route)
-                                       (51.2% logic, 48.8% route)
+    Total                      4.458ns (2.477ns logic, 1.981ns route)
+                                       (55.6% logic, 44.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -559,12 +546,12 @@ Offset:              4.394ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.17 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.89 secs
  
 --> 
 
-Total memory usage is 264484 kilobytes
+Total memory usage is 303232 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   21 (   0 filtered)

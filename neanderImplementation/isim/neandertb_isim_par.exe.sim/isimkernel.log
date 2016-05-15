@@ -1,0 +1,32 @@
+Command line:
+   neandertb_isim_par.exe
+     -simmode  gui
+     -sdfmax  /uut/=netgen/par/neander_timesim.sdf
+     -sdfroot  /uut
+     -simrunnum  0
+     -socket  61344
+
+Sun May 15 14:37:55 2016
+
+
+ Elaboration Time: 0.28125 sec
+
+ Current Memory Usage: 889.946 Meg
+
+ Total Signals          : 9049
+ Total Nets             : 6130
+ Total Signal Drivers   : 5633
+ Total Blocks           : 2710
+ Total Primitive Blocks : 1573
+ Total Processes        : 5629
+ Total Traceable Variables  : 13058
+ Total Scalar Nets and Variables : 71358
+Total Line Count : 18128
+Total Line Count : 18128
+
+ Total Simulation Time: 1.14063 sec
+
+ Current Memory Usage: 575.373 Meg
+
+Sun May 15 14:58:05 2016
+

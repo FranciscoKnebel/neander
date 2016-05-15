@@ -2,6 +2,7 @@
 _xmsgs\pn_parser.xmsgs
 dualBRAM.asy
 dualBRAM.gise
+dualBRAM.mif
 dualBRAM.ngc
 dualBRAM.sym
 dualBRAM.vhd

@@ -61,9 +61,17 @@ architecture Behavioral of controlunit is
 	signal stop_s : STD_LOGIC;
 
 begin
+	sync_proc: process(NEXT_STATE, RST, CLK)
+		begin
+			if (rst = '1') then
+				current_state <= IDLE;
+			elsif (clk'event AND clk = '1') then
+				current_state <= next_state;
+			end if;
+	end process sync_proc;
+
 
 	process (clk, rst)
-    variable state_timer: integer; -- states for two cicles
 	begin
 		if (rst = '1') then
 			stop_s 	<= '0';
@@ -75,13 +83,12 @@ begin
 			loadN <= '0';
 			loadZ <= '0';			
 			wr_enable_mem <= "0";
-         state_timer := 1;
 			next_state <= IDLE;
 		elsif (clk = '1' and clk'EVENT) then
 			case current_state is
 			
 			when IDLE =>
-				if (enable_neander = '1' and stop_s = '0') then
+				if (enable_neander = '1' AND stop_s /= '1') then
 					next_state <= BUSCA_INSTRUCAO;
 				else
 					next_state <= IDLE;
@@ -230,14 +237,6 @@ begin
 			when others =>
 				next_state <= IDLE;
 			end case;
-			
-			if state_timer = 0 then			-- states for two cicles
-				current_state <= next_state;
-				state_timer := 1;
-			else
-				current_state <= current_state;
-				state_timer := state_timer -1;
-			end if;
 		end if;
 	end process;
 	stop <= stop_s;

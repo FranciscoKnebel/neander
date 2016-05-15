@@ -1,0 +1,2 @@
+vhdl isim_temp "netgen/par/neander_timesim.vhd"
+vhdl isim_temp "neandertb.vhd"

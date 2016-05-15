@@ -4,7 +4,7 @@
 <body text="#000000" bgcolor="#FFFFFF" link="#0000EE" vlink="#551A8B" alink="#FF0000">
 <table border="" cellspacing="0" cellpadding="3" width="100%">
 <tbody><tr align="CENTER" bgcolor="#99CCFF">
-<td align="CENTER" colspan="4"><b>neander Project Status (05/06/2016 - 23:39:03)</b></td></tr>
+<td align="CENTER" colspan="4"><b>neander Project Status (05/15/2016 - 14:15:37)</b></td></tr>
 <tr align="LEFT">
 <td bgcolor="#FFFF99"><b>Project File:</b></td>
 <td>neanderImplementation.xise</td>
@@ -27,7 +27,7 @@ No Errors</td>
 <tr align="LEFT">
 <td bgcolor="#FFFF99"><b>Product Version:</b></td><td>ISE 14.7</td>
 <td bgcolor="#FFFF99"><ul><li><b>Warnings:</b></li></ul></td>
-<td align="LEFT"><a href_disabled="C:/Users/franc/Documents/neander/neanderImplementation\_xmsgs/*.xmsgs?&amp;DataKey=Warning">14 Warnings (13 new)</a></td>
+<td align="LEFT"><a href_disabled="C:/Users/franc/Documents/neander/neanderImplementation\_xmsgs/*.xmsgs?&amp;DataKey=Warning">47 Warnings (47 new)</a></td>
 </tr>
 <tr align="LEFT">
 <td bgcolor="#FFFF99"><b>Design Goal:</b></td>
@@ -61,44 +61,56 @@ System Settings</a>
 <tr align="CENTER" bgcolor="#FFFF99">
 <td align="LEFT"><b>Logic Utilization</b></td><td><b>Used</b></td><td><b>Available</b></td><td><b>Utilization</b></td><td colspan="2"><b>Note(s)</b></td>
 </tr>
-<tr align="RIGHT"><td align="LEFT">Number of Slice Flip Flops</td>
-<td align="RIGHT">110</td>
+<tr align="RIGHT"><td align="LEFT">Total Number Slice Registers</td>
+<td align="RIGHT">118</td>
 <td align="RIGHT">1,920</td>
-<td align="RIGHT">5%</td>
+<td align="RIGHT">6%</td>
+<td colspan="2">&nbsp;</td>
+</tr>
+<tr align="RIGHT"><td align="LEFT">&nbsp;&nbsp;&nbsp;&nbsp;Number used as Flip Flops</td>
+<td align="RIGHT">110</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td colspan="2">&nbsp;</td>
+</tr>
+<tr align="RIGHT"><td align="LEFT">&nbsp;&nbsp;&nbsp;&nbsp;Number used as Latches</td>
+<td align="RIGHT">8</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 <td colspan="2">&nbsp;</td>
 </tr>
 <tr align="RIGHT"><td align="LEFT">Number of 4 input LUTs</td>
-<td align="RIGHT">197</td>
-<td align="RIGHT">1,920</td>
-<td align="RIGHT">10%</td>
-<td colspan="2">&nbsp;</td>
-</tr>
-<tr align="RIGHT"><td align="LEFT">Number of occupied Slices</td>
-<td align="RIGHT">111</td>
-<td align="RIGHT">960</td>
-<td align="RIGHT">11%</td>
-<td colspan="2">&nbsp;</td>
-</tr>
-<tr align="RIGHT"><td align="LEFT">&nbsp;&nbsp;&nbsp;&nbsp;Number of Slices containing only related logic</td>
-<td align="RIGHT">111</td>
-<td align="RIGHT">111</td>
-<td align="RIGHT">100%</td>
-<td colspan="2">&nbsp;</td>
-</tr>
-<tr align="RIGHT"><td align="LEFT">&nbsp;&nbsp;&nbsp;&nbsp;Number of Slices containing unrelated logic</td>
-<td align="RIGHT">0</td>
-<td align="RIGHT">111</td>
-<td align="RIGHT">0%</td>
-<td colspan="2">&nbsp;</td>
-</tr>
-<tr align="RIGHT"><td align="LEFT">Total Number of 4 input LUTs</td>
 <td align="RIGHT">198</td>
 <td align="RIGHT">1,920</td>
 <td align="RIGHT">10%</td>
 <td colspan="2">&nbsp;</td>
 </tr>
+<tr align="RIGHT"><td align="LEFT">Number of occupied Slices</td>
+<td align="RIGHT">117</td>
+<td align="RIGHT">960</td>
+<td align="RIGHT">12%</td>
+<td colspan="2">&nbsp;</td>
+</tr>
+<tr align="RIGHT"><td align="LEFT">&nbsp;&nbsp;&nbsp;&nbsp;Number of Slices containing only related logic</td>
+<td align="RIGHT">117</td>
+<td align="RIGHT">117</td>
+<td align="RIGHT">100%</td>
+<td colspan="2">&nbsp;</td>
+</tr>
+<tr align="RIGHT"><td align="LEFT">&nbsp;&nbsp;&nbsp;&nbsp;Number of Slices containing unrelated logic</td>
+<td align="RIGHT">0</td>
+<td align="RIGHT">117</td>
+<td align="RIGHT">0%</td>
+<td colspan="2">&nbsp;</td>
+</tr>
+<tr align="RIGHT"><td align="LEFT">Total Number of 4 input LUTs</td>
+<td align="RIGHT">199</td>
+<td align="RIGHT">1,920</td>
+<td align="RIGHT">10%</td>
+<td colspan="2">&nbsp;</td>
+</tr>
 <tr align="RIGHT"><td align="LEFT">&nbsp;&nbsp;&nbsp;&nbsp;Number used as logic</td>
-<td align="RIGHT">197</td>
+<td align="RIGHT">198</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td colspan="2">&nbsp;</td>
@@ -134,7 +146,7 @@ System Settings</a>
 <td colspan="2">&nbsp;</td>
 </tr>
 <tr align="RIGHT"><td align="LEFT">Average Fanout of Non-Clock Nets</td>
-<td align="RIGHT">3.37</td>
+<td align="RIGHT">3.27</td>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
 <td colspan="2">&nbsp;</td>
@@ -171,12 +183,12 @@ System Settings</a>
 <tbody><tr align="CENTER" bgcolor="#99CCFF"><td align="CENTER" colspan="6"><b>Detailed Reports</b></td><td align="RIGHT" width="10%" colspan="1"> <a href_disabled="?&amp;ExpandedTable=DetailedReports"><b>[-]</b></a></td></tr>
 <tr bgcolor="#FFFF99"><td><b>Report Name</b></td><td><b>Status</b></td><td><b>Generated</b></td>
 <td align="LEFT"><b>Errors</b></td><td align="LEFT"><b>Warnings</b></td><td align="LEFT" colspan="2"><b>Infos</b></td></tr>
-<tr align="LEFT"><td><a href_disabled="C:/Users/franc/Documents/neander/neanderImplementation\neander.syr">Synthesis Report</a></td><td>Current</td><td>sáb 7. mai 03:24:59 2016</td><td align="LEFT">0</td><td align="LEFT"><a href_disabled="C:/Users/franc/Documents/neander/neanderImplementation\_xmsgs/xst.xmsgs?&amp;DataKey=Warning">14 Warnings (13 new)</a></td><td align="LEFT" colspan="2"><a href_disabled="C:/Users/franc/Documents/neander/neanderImplementation\_xmsgs/xst.xmsgs?&amp;DataKey=Info">2 Infos (2 new)</a></td></tr>
-<tr align="LEFT"><td><a href_disabled="C:/Users/franc/Documents/neander/neanderImplementation\neander.bld">Translation Report</a></td><td>Current</td><td>sáb 7. mai 03:25:03 2016</td><td align="LEFT">0</td><td align="LEFT">0</td><td align="LEFT" colspan="2">0</td></tr>
-<tr align="LEFT"><td><a href_disabled="C:/Users/franc/Documents/neander/neanderImplementation\neander_map.mrp">Map Report</a></td><td>Current</td><td>sáb 7. mai 03:25:06 2016</td><td align="LEFT">0</td><td align="LEFT">0</td><td align="LEFT" colspan="2"><a href_disabled="C:/Users/franc/Documents/neander/neanderImplementation\_xmsgs/map.xmsgs?&amp;DataKey=Info">2 Infos (0 new)</a></td></tr>
-<tr align="LEFT"><td><a href_disabled="C:/Users/franc/Documents/neander/neanderImplementation\neander.par">Place and Route Report</a></td><td>Current</td><td>sáb 7. mai 03:25:13 2016</td><td align="LEFT">0</td><td align="LEFT">0</td><td align="LEFT" colspan="2"><a href_disabled="C:/Users/franc/Documents/neander/neanderImplementation\_xmsgs/par.xmsgs?&amp;DataKey=Info">2 Infos (1 new)</a></td></tr>
+<tr align="LEFT"><td><a href_disabled="C:/Users/franc/Documents/neander/neanderImplementation\neander.syr">Synthesis Report</a></td><td>Current</td><td>dom 15. mai 14:15:20 2016</td><td align="LEFT">0</td><td align="LEFT"><a href_disabled="C:/Users/franc/Documents/neander/neanderImplementation\_xmsgs/xst.xmsgs?&amp;DataKey=Warning">21 Warnings (21 new)</a></td><td align="LEFT" colspan="2"><a href_disabled="C:/Users/franc/Documents/neander/neanderImplementation\_xmsgs/xst.xmsgs?&amp;DataKey=Info">3 Infos (3 new)</a></td></tr>
+<tr align="LEFT"><td><a href_disabled="C:/Users/franc/Documents/neander/neanderImplementation\neander.bld">Translation Report</a></td><td>Current</td><td>dom 15. mai 14:15:23 2016</td><td align="LEFT">0</td><td align="LEFT">0</td><td align="LEFT" colspan="2">0</td></tr>
+<tr align="LEFT"><td><a href_disabled="C:/Users/franc/Documents/neander/neanderImplementation\neander_map.mrp">Map Report</a></td><td>Current</td><td>dom 15. mai 14:15:26 2016</td><td align="LEFT">0</td><td align="LEFT"><a href_disabled="C:/Users/franc/Documents/neander/neanderImplementation\_xmsgs/map.xmsgs?&amp;DataKey=Warning">25 Warnings (25 new)</a></td><td align="LEFT" colspan="2"><a href_disabled="C:/Users/franc/Documents/neander/neanderImplementation\_xmsgs/map.xmsgs?&amp;DataKey=Info">4 Infos (4 new)</a></td></tr>
+<tr align="LEFT"><td><a href_disabled="C:/Users/franc/Documents/neander/neanderImplementation\neander.par">Place and Route Report</a></td><td>Current</td><td>dom 15. mai 14:15:34 2016</td><td align="LEFT">0</td><td align="LEFT"><a href_disabled="C:/Users/franc/Documents/neander/neanderImplementation\_xmsgs/par.xmsgs?&amp;DataKey=Warning">1 Warning (1 new)</a></td><td align="LEFT" colspan="2"><a href_disabled="C:/Users/franc/Documents/neander/neanderImplementation\_xmsgs/par.xmsgs?&amp;DataKey=Info">2 Infos (2 new)</a></td></tr>
 <tr align="LEFT"><td>Power Report</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td colspan="2">&nbsp;</td></tr>
-<tr align="LEFT"><td><a href_disabled="C:/Users/franc/Documents/neander/neanderImplementation\neander.twr">Post-PAR Static Timing Report</a></td><td>Current</td><td>sáb 7. mai 03:25:15 2016</td><td align="LEFT">0</td><td align="LEFT">0</td><td align="LEFT" colspan="2"><a href_disabled="C:/Users/franc/Documents/neander/neanderImplementation\_xmsgs/trce.xmsgs?&amp;DataKey=Info">6 Infos (0 new)</a></td></tr>
+<tr align="LEFT"><td><a href_disabled="C:/Users/franc/Documents/neander/neanderImplementation\neander.twr">Post-PAR Static Timing Report</a></td><td>Current</td><td>dom 15. mai 14:15:36 2016</td><td align="LEFT">0</td><td align="LEFT">0</td><td align="LEFT" colspan="2"><a href_disabled="C:/Users/franc/Documents/neander/neanderImplementation\_xmsgs/trce.xmsgs?&amp;DataKey=Info">6 Infos (6 new)</a></td></tr>
 <tr align="LEFT"><td>Bitgen Report</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td colspan="2">&nbsp;</td></tr>
 </tbody></table>
 &nbsp;<br><table border="" cellspacing="0" cellpadding="3" width="100%">
@@ -185,5 +197,5 @@ System Settings</a>
 </tbody></table>
 
 
-<br><center><b>Date Generated:</b> 05/07/2016 - 03:28:47</center>
+<br><center><b>Date Generated:</b> 05/15/2016 - 14:15:37</center>
 </body></html>

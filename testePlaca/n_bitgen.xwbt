@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\franc\Documents\neander\a\n.ncd
+OUTFILE=C:\Users\franc\Documents\neander\a\n.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=C:\Users\franc\Documents\neander\a
+LICENSE=WebPack
+USER_INFO=211182295_0_0_856

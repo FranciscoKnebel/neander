@@ -1,0 +1,69 @@
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+WARNING:sim - A core named 'dualBRAM' already exists in the project. Output
+   products for this core may be overwritten.
+Resolving generics for 'dualBRAM'...
+WARNING:sim - A core named 'dualBRAM' already exists in the project. Output
+   products for this core may be overwritten.
+Applying external generics to 'dualBRAM'...
+Delivering associated files for 'dualBRAM'...
+Delivering EJava files for 'dualBRAM'...
+Generating implementation netlist for 'dualBRAM'...
+INFO:sim - Pre-processing HDL files for 'dualBRAM'...
+Running synthesis for 'dualBRAM'
+Running ngcbuild...
+Writing VHO instantiation template for 'dualBRAM'...
+Writing VHDL behavioral simulation model for 'dualBRAM'...
+WARNING:sim - Overwriting existing file
+   C:/Users/franc/Documents/neander/neanderImplementation/ipcore_dir/tmp/_cg/dua
+   lBRAM/doc/blk_mem_gen_v7_3_vinfo.html with file from view
+   xilinx_documentation
+Delivered 1 file into directory
+C:/Users/franc/Documents/neander/neanderImplementation/ipcore_dir/tmp/_cg/dualBR
+AM
+Generating ASY schematic symbol...
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'dualBRAM'...
+Generating metadata file...
+Regenerating ISE project file for 'dualBRAM'...
+Generating ISE project...
+XCO file found: dualBRAM.xco
+XMDF file found: dualBRAM_xmdf.tcl
+Adding
+C:/Users/franc/Documents/neander/neanderImplementation/ipcore_dir/tmp/_cg/dualBR
+AM.asy -view all -origin_type imported
+Adding
+C:/Users/franc/Documents/neander/neanderImplementation/ipcore_dir/tmp/_cg/dualBR
+AM.ngc -view all -origin_type created
+Checking file
+"C:/Users/franc/Documents/neander/neanderImplementation/ipcore_dir/tmp/_cg/dualB
+RAM.ngc" for project device match ...
+File
+"C:/Users/franc/Documents/neander/neanderImplementation/ipcore_dir/tmp/_cg/dualB
+RAM.ngc" device information matches project device.
+Adding
+C:/Users/franc/Documents/neander/neanderImplementation/ipcore_dir/tmp/_cg/dualBR
+AM.sym -view all -origin_type imported
+Adding
+C:/Users/franc/Documents/neander/neanderImplementation/ipcore_dir/tmp/_cg/dualBR
+AM.vhd -view all -origin_type created
+INFO:HDLCompiler:1061 - Parsing VHDL file
+   "C:/Users/franc/Documents/neander/neanderImplementation/ipcore_dir/tmp/_cg/du
+   alBRAM.vhd" into library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+C:/Users/franc/Documents/neander/neanderImplementation/ipcore_dir/tmp/_cg/dualBR
+AM.vho -view all -origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/dualBRAM"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Launching README viewer...
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'dualBRAM'.
