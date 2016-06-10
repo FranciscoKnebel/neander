@@ -1,5 +1,6 @@
 # NEANDER
 VHDL implementation of the Neander architecture.
+This is a good starting point for anyone trying to develop it, but the project isn't complete and/or fully functional.
 
 
 
